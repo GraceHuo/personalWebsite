@@ -1,13 +1,27 @@
-<nav>
-  <ul>
-    <li>
-      <a href="" [routerLink]="['/home']">Home</a>
-    </li>
-    <li>
-      <a href="" [routerLink]="['/skills']">Skills</a>
-    </li>
-    <li>
-      <a href="" [routerLink]="['/projects/list']">Projects</a>
-    </li>
-  </ul>
-</nav>
+<div class="container">
+  <nav class="navbar navbar-expand-lg navbar-light top-nav">
+    <a class="navbar-brand" href="#">
+      <h2>Grace Huo</h2>
+      <span> Software Developer</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="" [routerLink]="['/home']" [routerLinkActive]="['active']">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="" [routerLink]="['/skills']" [routerLinkActive]="['active']">SKILLS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="" [routerLink]="['/projects/list']" [routerLinkActive]="['active']">PROJECTS</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
+

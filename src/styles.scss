@@ -1,1 +1,16 @@
-/* You can add global styles to this file, and also import other style files */
+/* global styles*/
+$blue : #68D0D3;
+$red : #E63955;
+$yellow : #D1C937;
+$background-color : #EAE4E4;
+
+body {
+  font-family : 'Josefin Sans', sans-serif !important;
+  background-color: $background-color;
+}
+
+.test {
+  border: 1px solid red;
+}
+
+
