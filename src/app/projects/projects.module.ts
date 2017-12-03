@@ -4,6 +4,7 @@ import {RouterModule} from '@angular/router';
 import { ProjectsListComponent } from './projects-list/projects-list.component';
 import {projectsRoutes} from './projects.routes';
 import { ProjectThumbnailComponent } from './project-thumbnail/project-thumbnail.component';
+import { ProjectDetailsComponent } from './project-details/project-details.component';
 
 
 @NgModule({
@@ -11,6 +12,6 @@ import { ProjectThumbnailComponent } from './project-thumbnail/project-thumbnail
     CommonModule,
     RouterModule.forChild(projectsRoutes)
   ],
-  declarations: [ProjectsListComponent, ProjectThumbnailComponent]
+  declarations: [ProjectsListComponent, ProjectThumbnailComponent, ProjectDetailsComponent]
 })
 export class ProjectsModule { }
