@@ -6,14 +6,57 @@ $background-color : #EAE4E4;
 
 body {
   font-family : 'Josefin Sans', sans-serif !important;
-  background-color: $background-color;
 }
 
-//nav {
-//  background-color: $yellow;
-//}
-
-.test {
-  height: 4000px;
+.fill-screen {
+  background-size     : cover;
+  background-position : center;
+  width               : 100%;
 }
+
+.home-container {
+  margin-top: 50px;
+  .home-left-container {
+    background-color : #E5E5E5;
+    padding: 25px;
+    .my-pic {
+      max-width: 50%;
+    }
+  }
+
+  .home-right-container {
+    background-color : #F1F1F1;
+    padding: 25px;
+  }
+}
+
+.btn-circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 0.6rem;
+  color: #FFF;
+
+  &.btn-xl {
+    width: 76px;
+    height: 76px;
+    border-radius: 38px;
+    font-size: 0.7rem;
+  }
+
+  &.first {
+    background-color: $red;
+  }
+
+  &.second {
+    background-color: $blue;
+  }
+
+  &.third {
+    background-color: $yellow;
+  }
+}
+
+
 

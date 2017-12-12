@@ -13,3 +13,15 @@
 <app-root></app-root>
 </body>
 </html>
+
+
+<script>
+  $(function(  ) {
+    $(window).on("load resize", function() {
+      $(".fill-screen").css("height", window.innerHeight);
+    });
+  })
+</script>
+<script>
+  $(window).stellar();
+</script>
