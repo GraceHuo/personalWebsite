@@ -21,6 +21,7 @@ body {
     padding: 25px;
     .my-pic {
       max-width: 50%;
+      margin-bottom: 25px;
     }
   }
 
@@ -56,6 +57,11 @@ body {
   &.third {
     background-color: $yellow;
   }
+}
+
+// Nto prevent the flash on initial load
+.wow {
+  visibility: hidden;
 }
 
 
