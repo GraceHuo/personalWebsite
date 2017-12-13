@@ -12,56 +12,65 @@ body {
   background-size     : cover;
   background-position : center;
   width               : 100%;
+  min-height          : 630px;
 }
 
 .home-container {
-  margin-top: 50px;
+  margin-top : 50px;
   .home-left-container {
     background-color : #E5E5E5;
-    padding: 25px;
+    padding          : 25px;
     .my-pic {
-      max-width: 50%;
-      margin-bottom: 25px;
+      width         : 50%;
+      max-width     : 200px;
+      margin-bottom : 25px;
     }
   }
 
   .home-right-container {
     background-color : #F1F1F1;
-    padding: 25px;
+    padding          : 25px;
+    h2 {
+      margin-bottom : 0;
+    }
+    h6 {
+      margin-top    : 1.5rem;
+      margin-bottom : 0.3rem;
+    }
   }
 }
 
 .btn-circle {
-  width: 30px;
-  height: 30px;
-  border-radius: 15px;
-  text-align: center;
-  font-size: 0.6rem;
-  color: #FFF;
+  width         : 30px;
+  height        : 30px;
+  border-radius : 15px;
+  text-align    : center;
+  font-size     : 0.6rem;
+  color         : #FFF;
 
   &.btn-xl {
-    width: 76px;
-    height: 76px;
-    border-radius: 38px;
-    font-size: 0.7rem;
+    width         : 76px;
+    height        : 76px;
+    border-radius : 38px;
+    font-size     : 0.8rem;
   }
 
   &.first {
-    background-color: $red;
+    background-color : $red;
   }
 
   &.second {
-    background-color: $blue;
+    background-color : $blue;
   }
 
   &.third {
-    background-color: $yellow;
+    background-color : $yellow;
   }
 }
 
-// Nto prevent the flash on initial load
+// to prevent the flash on initial load
 .wow {
-  visibility: hidden;
+  visibility : hidden;
 }
 
 

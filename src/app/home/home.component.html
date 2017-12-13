@@ -1,11 +1,11 @@
 <div class="container-fluid">
   <div class="row">
-    <div class="fill-screen" style="background-image: url('../../assets/img/background.jpg')"
+    <div class="fill-screen" [style.height.px]="windowHeight" style="background-image: url('../../assets/img/background.jpg')"
          stellar-bg data-stellar-background-ratio="0.2">
       <div class="container">
         <div class="row home-container">
           <!--left-->
-          <div class="col-sm-6 home-left-container wow slideInLeft">
+          <div class="col-sm-6 home-left-container wow slideInLeft" data-wow-duration="1s">
             <div class="container-fluid">
               <!--my pic-->
               <div class="row justify-content-center align-items-center">
@@ -17,30 +17,50 @@
               <!--about me-->
               <div class="row justify-content-center">
                 <h2 class="w-75"> Hello,</h2>
-                <h3 class="w-75"> a bit about me:</h3>
+                <h4 class="w-75"> a bit about me:</h4>
               </div>
 
               <!--buttons-->
               <div class="row justify-content-around">
-                <button type="button" class="btn first btn-circle btn-xl"><span>RESUME</span></button>
-                <button type="button" class="btn second btn-circle btn-xl"><span>SKILLS</span></button>
-                <button type="button" class="btn third btn-circle btn-xl"><span>STORIES</span></button>
+                <button *ngFor="let item of homeButtons"
+                        type="button"
+                        class="btn btn-circle btn-xl wow swing {{item.cssClass}}"
+                        [routerLink]="[item.routerLink]"
+                        data-wow-delay="1.5s">
+                  <span>{{item.label}}</span>
+                </button>
               </div>
 
             </div>
           </div>
           <!--right-->
-          <div class="col-sm-6 home-right-container wow slideInRight">
-            <h2> Yan (Grace) Huo </h2>
-            <p>123</p>
+          <div class="col-sm-6 home-right-container wow slideInRight" data-wow-duration="1s">
+            <h2> {{name}} </h2>
+            <b>{{position|uppercase}}</b>
+            <h6><b>Phone:</b></h6>
+            <span>{{phone}}</span>
+            <h6><b>Email:</b></h6>
+            <span>{{email}}</span>
+            <h6><b>Address:</b></h6>
+            <span>{{address.street}}</span><br/>
+            <span>{{address.city}}, {{address.state}}, {{address.zip}}</span><br/>
           </div>
+        </div>
+
+        <!--arrow-->
+        <div class="row justify-content-center align-items-center">
+          <a class="btn" (click)="scroll()">
+            <i class="fa fa-arrow-circle-down fa-4x" aria-hidden="true"></i>
+          </a>
         </div>
       </div>
     </div>
   </div>
 
   <div class="row">
-    <div class="fill-screen" style="background-image: url('../../assets/img/test.jpg')">
+    <div class="best fill-screen wow slideInLeft"
+         [style.height.px]="windowHeight"
+         style="background-image: url('../../assets/img/test.jpg')">
     </div>
   </div>
 </div>
