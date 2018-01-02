@@ -1,3 +1,47 @@
-<p>
-  skills works!
-</p>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6">
+      <h1 class="title" >
+        <i class="fa fa-pencil-square" aria-hidden="true"></i>
+        Skills
+      </h1>
+    </div>
+    <div class="col-sm-6">
+      123
+    </div>
+
+  </div>
+  <hr>
+
+  <!--title & description-->
+  <div class="row">
+    <div class="col-sm-6" *ngFor="let skill of skills">
+      <h3 class="title">{{skill.title}}</h3>
+      <p>{{skill.description}}</p>
+    </div>
+  </div>
+  <!--list-->
+  <div class="row">
+    <div class="col-sm-6" *ngFor="let skill of skills">
+      <ul class="list-group">
+        <li class="list-group-item" *ngFor="let category of skill.list">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-5 col-lg-4">
+                <b>{{category.title}}:</b>
+              </div>
+              <div class="col-md-7 col-lg-8">
+                <div *ngFor="let item of category.items">
+                  <i class="fa fa-circle"
+                     [ngClass]="{'first':item.level===1, 'second':item.level===2, 'third':item.level===3}"
+                     aria-hidden="true"></i> {{item.name}}
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+

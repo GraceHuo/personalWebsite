@@ -30,7 +30,7 @@ export class SkillsComponent implements OnInit {
       'the followings are the techniques and tools I use to develop reliable and user-friendly websites.',
       list: [
         {
-          category: 'Fundamentals',
+          title: 'Fundamentals',
           items: [
             {
               name: 'HTML',
@@ -47,7 +47,7 @@ export class SkillsComponent implements OnInit {
           ]
         },
         {
-          category: 'Languages',
+          title: 'Programming',
           items: [
             {
               name: 'JavaScript',
@@ -68,7 +68,7 @@ export class SkillsComponent implements OnInit {
           ]
         },
         {
-          category: 'JavaScript Frameworks',
+          title: 'JavaScript Frameworks',
           items: [
             {
               name: 'AngularJS',
@@ -81,7 +81,7 @@ export class SkillsComponent implements OnInit {
           ]
         },
         {
-          category: 'Front-End Frameworks',
+          title: 'Front-End Frameworks',
           items: [
             {
               name: 'Foundation',
@@ -94,7 +94,7 @@ export class SkillsComponent implements OnInit {
           ]
         },
         {
-          category: 'JavaScript Libraries (including but not limited to)',
+          title: 'JavaScript Libraries (including but not limited to)',
           items: [
             {
               name: 'jQuery',
@@ -119,7 +119,7 @@ export class SkillsComponent implements OnInit {
           ]
         },
         {
-          category: 'Working With Backend',
+          title: 'Working With Backend',
           items: [
             {
               name: 'RESTful',
@@ -132,7 +132,7 @@ export class SkillsComponent implements OnInit {
           ]
         },
         {
-          category: 'Design Basic',
+          title: 'Design Basic',
           items: [
             {
               name: 'Responsive Design',
@@ -141,7 +141,7 @@ export class SkillsComponent implements OnInit {
           ]
         },
         {
-          category: 'Testing',
+          title: 'Testing',
           items: [
             {
               name: 'Jasmine Framework',
@@ -154,7 +154,7 @@ export class SkillsComponent implements OnInit {
           ]
         },
         {
-          category: 'Version Control',
+          title: 'Version Control',
           items: [
             {
               name: 'Git',
@@ -163,7 +163,7 @@ export class SkillsComponent implements OnInit {
           ]
         },
         {
-          category: 'Automation',
+          title: 'Automation',
           items: [
             {
               name: 'Gulp',
@@ -178,7 +178,7 @@ export class SkillsComponent implements OnInit {
       description: 'I am open to all kinds of new techniques, skills and concept.',
       list: [
         {
-          category: 'Languages',
+          title: 'Languages',
           items: [
             {
               name: 'Java',
@@ -195,7 +195,7 @@ export class SkillsComponent implements OnInit {
           ],
         },
         {
-          category: 'Others',
+          title: 'Others',
           items: [
             {
               name: 'Ruby on Rails',
