@@ -1,0 +1,30 @@
+<div class="timeline">
+  <div class="timeline-center-line"></div>
+  <div class="timeline-content">
+
+    <!-- artical -->
+    <div class="timeline-article"
+         *ngFor="let article of list">
+      <div class="timeline-break-point"></div>
+      <div class="timeline-container timeline-container-left wow slideInLeft">
+        <h5 class="timeline-title">
+          <b>
+            {{article.startDate}} -
+            <span *ngIf="article.endDate">{{article.endDate}} </span>
+            <span *ngIf="!article.endDate">Present </span>
+          </b></h5>
+        <span> {{article[config.leftContent]}} </span>
+      </div>
+      <div class="timeline-container timeline-container-right wow slideInRight">
+        <h5 class="timeline-title"> {{article[config.rightTitle] | uppercase}}</h5>
+        <span>
+          {{article[config.rightContent]}}
+        </span>
+        <li *ngFor="let item of article[config.rightList]">
+          {{item}}
+        </li>
+      </div>
+    </div> <!-- end of article -->
+
+  </div> <!-- end of timeline content -->
+</div> <!-- end of timeline -->

@@ -9,6 +9,10 @@ import {SkillsComponent} from './skills/skills.component';
 import {NavbarComponent} from './navbar/navbar.component';
 import {Error404Component} from './error404/error404.component';
 import { FooterComponent } from './footer/footer.component';
+import { EducationComponent } from './education/education.component';
+import { ExperienceComponent } from './experience/experience.component';
+import { CertificationsAwardsComponent } from './certifications-awards/certifications-awards.component';
+import { TimelineComponent } from './timeline/timeline.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +21,11 @@ import { FooterComponent } from './footer/footer.component';
     SkillsComponent,
     NavbarComponent,
     Error404Component,
-    FooterComponent
+    FooterComponent,
+    EducationComponent,
+    ExperienceComponent,
+    CertificationsAwardsComponent,
+    TimelineComponent
   ],
   imports: [
     BrowserModule,

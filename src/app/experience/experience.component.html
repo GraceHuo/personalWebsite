@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="row">
+    <h1 class="title">
+      <i class="fa fa-suitcase" aria-hidden="true"></i>
+      Experience
+    </h1>
+  </div>
+  <hr>
+
+  <div class="row">
+    <div class="col-12">
+      <h4 class="subtitle first"> Working Experience</h4>
+      <app-timeline
+        [list]="workList"
+        [config]="timelineConfig">
+      </app-timeline>
+    </div>
+  </div>
+
+  <div class="row mt-5">
+    <div class="col-12">
+      <h4 class="subtitle first"> Academic Experience</h4>
+      <app-timeline
+        [list]="academicList"
+        [config]="timelineConfig">
+      </app-timeline>
+    </div>
+  </div>
+</div>

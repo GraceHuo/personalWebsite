@@ -8,10 +8,6 @@ body {
   font-family : 'Josefin Sans', sans-serif !important;
 }
 
-nav{
-  background-color: #68D0D3;
-}
-
 .title {
   margin-top: 1.5rem;
 }
@@ -51,7 +47,7 @@ nav{
   }
 }
 
-.fa.fa-circle {
+.fa.fa-circle, .subtitle {
   &.first {
     color : $red;
   }

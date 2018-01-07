@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="row">
+    <h1 class="title">
+      <i class="fa fa-book" aria-hidden="true"></i>
+      Education
+    </h1>
+  </div>
+  <hr>
+
+  <div class="row">
+    <div class="col-12"><p class="subtitle second">I hold master's degrees in both chemistry and computer science.</p></div>
+    <div class="col-12">
+      <app-timeline
+        [list]="educationList"
+        [config]="timelineConfig">
+      </app-timeline>
+    </div>
+  </div>
+</div>

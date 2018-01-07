@@ -11,15 +11,27 @@ export class NavbarComponent implements OnInit {
   navItems: any[] = [
     {
       routerLink: '/home',
-      label: 'HOME'
+      label: 'Home'
     },
     {
       routerLink: '/skills',
-      label: 'SKILLS'
+      label: 'Skills'
     },
     {
       routerLink: '/projects/list',
-      label: 'PROJECTS'
+      label: 'Projects'
+    },
+    {
+      routerLink: '/education',
+      label: 'Education'
+    },
+    {
+      routerLink: '/experience',
+      label: 'Experience'
+    },
+    {
+      routerLink: '/certifications-awards',
+      label: 'Certifications & Awards'
     }
   ];
 

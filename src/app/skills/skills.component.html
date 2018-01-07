@@ -1,12 +1,12 @@
 <div class="container">
   <div class="row">
-    <div class="col-sm-6">
+    <div class="col-12">
       <h1 class="title" >
-        <i class="fa fa-pencil-square" aria-hidden="true"></i>
+        <i class="fa fa-wrench" aria-hidden="true"></i>
         Skills
       </h1>
     </div>
-    <div class="col-sm-6">
+    <div class="col-12">
       123
     </div>
 
@@ -15,14 +15,14 @@
 
   <!--title & description-->
   <div class="row">
-    <div class="col-sm-6" *ngFor="let skill of skills">
+    <div class="col-sm-6 px-lg-5 skill-column" *ngFor="let skill of skills">
       <h3 class="title">{{skill.title}}</h3>
       <p>{{skill.description}}</p>
     </div>
   </div>
   <!--list-->
   <div class="row">
-    <div class="col-sm-6" *ngFor="let skill of skills">
+    <div class="col-sm-6 px-lg-5" *ngFor="let skill of skills">
       <ul class="list-group">
         <li class="list-group-item" *ngFor="let category of skill.list">
           <div class="container">
