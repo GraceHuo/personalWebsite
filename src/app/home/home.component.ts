@@ -18,8 +18,8 @@ export class HomeComponent implements OnInit {
       cssClass: 'second'
     },
     {
-      routerLink: '/#',
-      label: 'STORY',
+      routerLink: '/projects',
+      label: 'PROJECTS',
       cssClass: 'third'
     }
   ];
@@ -37,22 +37,28 @@ export class HomeComponent implements OnInit {
   characteristics = [
     {
       name: 'Problem Solver',
-      details: 'My work is full of challenges, from figuring out how to best implement a design, to fixing bugs that crop up.' +
-      'I enjoy these challenges and I always try to solve these problems smartly, quickly and effectively.'
+      details: 'My work is full of challenges, from figuring out how to best implement a customer request, to quickly fixing bugs that crop up. ' +
+      'I enjoy these challenges and I always try to solve these problems smartly and effectively.'
     },
     {
       name: 'Quick Learner',
-      details: 'Tools and techniques used for front-end development change constantly. But I can pick up new skills and apply them quickly.'
+      details: 'Tools and techniques used for front-end development change constantly. ' +
+      'But I can pick up new skills and apply them very quickly. ' +
+      'Over the last year, I am done for being from someone who don\'t know about Angular at all to be the most senior Angular developer in the team.'
     },
     {
       name: 'Team Player',
-      details: 'I enjoy being a part of a team. And my teammate enjoy working with me. ' +
-      'My colleagues described me as "reliable, flexible and organized".'
+      details: 'I enjoy being a part of a team and make contribution to the team. ' +
+      'My colleagues enjoy working with me as well. They describe me as "reliable, flexible and organized".'
     }
   ];
 
-  scroll() {
-    document.getElementsByClassName('best')[0].scrollIntoView({behavior: 'smooth'});
+  scrollDown() {
+    document.getElementsByClassName('down')[0].scrollIntoView({behavior: 'smooth'});
+  }
+
+  scrollUp() {
+    document.getElementsByClassName('up')[0].scrollIntoView({behavior: 'smooth'});
   }
 
   constructor() {

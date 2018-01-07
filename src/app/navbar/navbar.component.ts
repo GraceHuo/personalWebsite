@@ -14,20 +14,20 @@ export class NavbarComponent implements OnInit {
       label: 'Home'
     },
     {
-      routerLink: '/skills',
-      label: 'Skills'
-    },
-    {
-      routerLink: '/projects/list',
-      label: 'Projects'
+      routerLink: '/experience',
+      label: 'Experience'
     },
     {
       routerLink: '/education',
       label: 'Education'
     },
     {
-      routerLink: '/experience',
-      label: 'Experience'
+      routerLink: '/skills',
+      label: 'Skills'
+    },
+    {
+      routerLink: '/projects/list',
+      label: 'Projects'
     },
     {
       routerLink: '/certifications-awards',

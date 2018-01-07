@@ -1,5 +1,5 @@
 <div class="container-fluid page-content">
-  <div class="row">
+  <div class="row up">
     <div class="fill-screen"
          [style.height.px]="windowHeight"
          style="background-image: url('http://res.cloudinary.com/dbinsowan/image/upload/v1513215606/background_eomx9u.jpg')"
@@ -7,7 +7,7 @@
       <div class="container">
         <div class="row home-container">
           <!--left-->
-          <div class="col-sm-6 home-left-container wow slideInLeft" data-wow-duration="1s">
+          <div class="col-sm-6 home-left-container wow fadeInLeftBig" data-wow-duration="1s">
             <div class="container-fluid">
               <!--my pic-->
               <div class="row justify-content-center align-items-center">
@@ -36,7 +36,7 @@
             </div>
           </div>
           <!--right-->
-          <div class="col-sm-6 home-right-container wow slideInRight" data-wow-duration="1s">
+          <div class="col-sm-6 home-right-container wow fadeInRightBig" data-wow-duration="1s">
             <h2> {{name}} </h2>
             <b>{{position|uppercase}}</b>
             <h6><b>Phone:</b></h6>
@@ -51,7 +51,7 @@
 
         <!--arrow-->
         <div class="row justify-content-center align-items-center">
-          <a class="btn" (click)="scroll()">
+          <a class="btn" (click)="scrollDown()">
             <i class="fa fa-arrow-circle-down fa-4x" aria-hidden="true"></i>
           </a>
         </div>
@@ -59,10 +59,34 @@
     </div>
   </div>
 
-  <div class="row">
-    <div class="best fill-screen wow slideInLeft"
-         [style.height.px]="windowHeight"
-         style="background-image: url('http://res.cloudinary.com/dbinsowan/image/upload/v1513215605/test_c1ogtf.jpg')">
+  <div class="row down">
+    <div class="fill-screen"
+         [style.height.px]="windowHeight">
+      <div class="container">
+        <!--arrow-->
+        <div class="row mt-5 justify-content-center align-items-center">
+          <a class="btn" (click)="scrollUp()">
+            <i class="fa fa-arrow-circle-up fa-4x" aria-hidden="true"></i>
+          </a>
+        </div>
+
+        <!--characteristics-->
+        <div class="row">
+          <div class="col-12">
+            <h2 class="mt-4 mb-2">I am a:</h2>
+          </div>
+          <div class="col-12">
+            <div class="mt-4 wow fadeInRight"
+                 *ngFor="let characteristic of characteristics; let i=index">
+              <h4 class="text" [ngClass]="{'first':i===0, 'second':i===1, 'third':i===2}">
+                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                {{characteristic.name | uppercase}}
+              </h4>
+              <span>{{characteristic.details}}</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
