@@ -6,15 +6,18 @@ import {Component, OnInit} from '@angular/core';
   styleUrls: ['./education.component.scss']
 })
 export class EducationComponent implements OnInit {
+  currentTab = 0; // 0 - timeline 1 - courses
+
   timelineConfig = {
     leftContent: 'degree',
     rightTitle: 'university',
     rightContent: 'major',
   };
+
   educationList: any[] = [
     {
       university: 'Tufts University',
-      universityLogo: '',
+      logo: 'http://res.cloudinary.com/dbinsowan/image/upload/v1515353428/tufts__logo_cl2fsm.jpg',
       major: 'Computer Science,  GPA: 3.95',
       startDate: '2015',
       endDate: '2017',
@@ -22,7 +25,7 @@ export class EducationComponent implements OnInit {
     },
     {
       university: 'Tufts University',
-      universityLogo: '',
+      logo: 'http://res.cloudinary.com/dbinsowan/image/upload/v1515353428/tufts__logo_cl2fsm.jpg',
       major: 'Computer Science, GPA: 4.00',
       startDate: '2014',
       endDate: '2015',
@@ -30,15 +33,15 @@ export class EducationComponent implements OnInit {
     },
     {
       university: 'University of Florida',
-      universityLogo: '',
+      logo: 'http://res.cloudinary.com/dbinsowan/image/upload/v1515353429/uf_logo_gvlm6u.png',
       major: 'Chemistry, GPA: 3.87',
       startDate: '2010',
-      endDate: '05/31/14',
+      endDate: '2014',
       degree: 'Master\'s Degree'
     },
     {
       university: 'Jilin University',
-      universityLogo: '',
+      logo: 'http://res.cloudinary.com/dbinsowan/image/upload/v1515353428/jilinU_logo_kz9tmh.jpg',
       major: 'Chemistry, GPA: 3.84',
       startDate: '2006',
       endDate: '2010',
@@ -91,6 +94,26 @@ export class EducationComponent implements OnInit {
 
   independentCoursesList: any[] = [
     {
+      name: 'Advanced JavaScript',
+      from: 'Pluralsight'
+    },
+    {
+      name: 'AngularJS Patterns: Clean Code',
+      from: 'Pluralsight'
+    },
+    {
+      name: 'AngularJS Fundamentals',
+      from: 'Pluralsight'
+    },
+    {
+      name: 'JavaScrip Build Automation With Gulp.js',
+      from: 'Pluralsight'
+    },
+    {
+      name: 'Mastering Git',
+      from: 'Pluralsight'
+    },
+    {
       name: 'Programming Mobile Applications for Android Handheld Systems',
       from: 'Coursera'
     },
@@ -109,29 +132,12 @@ export class EducationComponent implements OnInit {
     {
       name: 'Single Page Web Applications with AngularJS',
       from: 'Coursera'
-    },
-    {
-      name: 'AngularJS Fundamentals',
-      from: 'Pluralsight'
-    },
-    {
-      name: 'JavaScrip Build Automation With Gulp.js',
-      from: 'Pluralsight'
-    },
-    {
-      name: 'Advanced JavaScript',
-      from: 'Pluralsight'
-    },
-    {
-      name: 'AngularJS Patterns: Clean Code',
-      from: 'Pluralsight'
-    },
-    {
-      name: 'Mastering Git',
-      from: 'Pluralsight'
     }
-
   ];
+
+  switchTab(index) {
+    this.currentTab = index;
+  }
 
   constructor() {
   }

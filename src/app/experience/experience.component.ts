@@ -17,9 +17,9 @@ export class ExperienceComponent implements OnInit {
 
   workList: any[] = [
     {
-      company: 'Intersystems',
-      title: 'Inter Software Developer',
-      companyLogo: '',
+      company: 'InterSystems Corporation',
+      title: 'Software Developer',
+      logo: 'http://res.cloudinary.com/dbinsowan/image/upload/v1515350978/intersystems_logo_vl3ck3.png',
       startDate: '02/21/17',
       details: 'Using Angular, developed user interfaces for some commercial applications, including:',
       detailsList: [
@@ -28,9 +28,9 @@ export class ExperienceComponent implements OnInit {
       ]
     },
     {
-      company: 'Neusoft',
+      company: 'Neusoft Corporation',
       title: 'Inter Software Developer',
-      companyLogo: '',
+      logo: 'http://res.cloudinary.com/dbinsowan/image/upload/v1515350978/neusoft_logo_jt46ln.jpg',
       startDate: '06/01/15',
       endDate: '08/31/15',
       details: 'Contributed to development of an education application for Android platform using Java:',
@@ -45,7 +45,7 @@ export class ExperienceComponent implements OnInit {
     {
       company: 'Tufts University HCI Lab',
       title: 'Research Assistant',
-      companyLogo: '',
+      logo: 'http://res.cloudinary.com/dbinsowan/image/upload/v1515353428/tufts__logo_cl2fsm.jpg',
       startDate: '08/01/16',
       endDate: '12/31/16',
       details: 'Designed and developed an Android appliction to visualize EDA value changes ' +
@@ -54,7 +54,7 @@ export class ExperienceComponent implements OnInit {
     {
       company: 'Tufts University',
       title: 'Teaching Assistant',
-      companyLogo: '',
+      logo: 'http://res.cloudinary.com/dbinsowan/image/upload/v1515353428/tufts__logo_cl2fsm.jpg',
       startDate: '09/01/15',
       endDate: '05/31/16',
       details: 'For Courses “Database Systems” and “Algorithm"',
@@ -65,7 +65,7 @@ export class ExperienceComponent implements OnInit {
     {
       company: 'University of Florida',
       title: 'Research Assistant',
-      companyLogo: '',
+      logo: 'http://res.cloudinary.com/dbinsowan/image/upload/v1515353429/uf_logo_gvlm6u.png',
       startDate: '09/01/10',
       endDate: '05/31/14',
       details: 'Focused on bioinorganic chemistry and magnetic applications of multinuclear metal complexes.',
@@ -73,7 +73,7 @@ export class ExperienceComponent implements OnInit {
     {
       company: 'University of Florida',
       title: 'Teaching Assistant',
-      companyLogo: '',
+      logo: 'http://res.cloudinary.com/dbinsowan/image/upload/v1515353429/uf_logo_gvlm6u.png',
       startDate: '09/01/10',
       endDate: '05/31/14',
       details: 'For Courses “General Chemistry”, “Analytical Chemistry” and “General Chemistry Lab”',
@@ -84,7 +84,7 @@ export class ExperienceComponent implements OnInit {
     }
   ];
 
-  public switchTab(index) {
+  switchTab(index) {
     this.currentTab = index;
   }
 
