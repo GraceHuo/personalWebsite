@@ -26,7 +26,7 @@
               <div class="row justify-content-around">
                 <button *ngFor="let item of homeButtons"
                         type="button"
-                        class="btn btn-circle btn-xl wow swing {{item.cssClass}}"
+                        class="btn btn-circle btn-xl text-light wow swing {{item.cssClass}}"
                         [routerLink]="[item.routerLink]"
                         data-wow-delay="1.5s">
                   <span>{{item.label}}</span>
