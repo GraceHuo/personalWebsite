@@ -202,6 +202,10 @@ export class SkillsComponent implements OnInit {
               level: 2
             },
             {
+              name: 'NodeJs',
+              level: 3
+            },
+            {
               name: 'Android',
               level: 2
             },
