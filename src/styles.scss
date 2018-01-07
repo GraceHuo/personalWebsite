@@ -66,5 +66,15 @@ body {
   visibility : hidden;
 }
 
+.sub-nav.nav-tabs {
+ .nav-link.active, .nav-link:hover {
+   color: $blue;
+ }
+}
+
+.page-content {
+  margin-bottom: 50px;
+}
+
 
 

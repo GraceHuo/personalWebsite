@@ -6,12 +6,15 @@ import {Component, OnInit} from '@angular/core';
   styleUrls: ['./experience.component.scss']
 })
 export class ExperienceComponent implements OnInit {
+  currentTab = 0; // 0 - work, 1 - academic
+
   timelineConfig = {
     leftContent: 'title',
     rightTitle: 'company',
     rightContent: 'details',
     rightList: 'detailsList'
   };
+
   workList: any[] = [
     {
       company: 'Intersystems',
@@ -80,6 +83,10 @@ export class ExperienceComponent implements OnInit {
       ]
     }
   ];
+
+  public switchTab(index) {
+    this.currentTab = index;
+  }
 
   constructor() {
   }

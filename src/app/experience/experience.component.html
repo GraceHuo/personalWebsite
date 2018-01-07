@@ -1,15 +1,26 @@
-<div class="container">
+<div class="container page-content">
   <div class="row">
     <h1 class="title">
       <i class="fa fa-suitcase" aria-hidden="true"></i>
       Experience
     </h1>
   </div>
-  <hr>
 
-  <div class="row">
+  <ul class="nav sub-nav nav-tabs">
+    <li class="nav-item" (click)="switchTab(0)">
+      <a class="nav-link" [ngClass]="{'active': currentTab===0}">
+        Working Experience
+      </a>
+    </li>
+    <li class="nav-item" (click)="switchTab(1)">
+      <a class="nav-link" [ngClass]="{'active': currentTab===1}">
+        Academic Experience
+      </a>
+    </li>
+  </ul>
+
+  <div class="row" *ngIf="currentTab===0">
     <div class="col-12">
-      <h4 class="subtitle first"> Working Experience</h4>
       <app-timeline
         [list]="workList"
         [config]="timelineConfig">
@@ -17,9 +28,8 @@
     </div>
   </div>
 
-  <div class="row mt-5">
+  <div class="row"  *ngIf="currentTab===1">
     <div class="col-12">
-      <h4 class="subtitle first"> Academic Experience</h4>
       <app-timeline
         [list]="academicList"
         [config]="timelineConfig">
