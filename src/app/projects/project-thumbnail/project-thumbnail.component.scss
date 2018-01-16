@@ -1,0 +1,23 @@
+.card {
+  &:active, &:hover, &:focus {
+    outline : 2px solid #68D0D3;
+  }
+  height : 100%;
+
+  .card-body {
+    background-color : #F1F1F1;
+    .card-text {
+      margin-bottom: 3rem;
+    }
+    .btn {
+      background-color : #68D0D3;
+      color            : #FFF;
+      position         : absolute;
+      bottom           : 1rem;
+      right            : 1rem;
+      &:hover {
+        background-color : darken(#68D0D3, 10)
+      }
+    }
+  }
+}

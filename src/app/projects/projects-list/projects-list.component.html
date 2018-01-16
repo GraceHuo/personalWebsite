@@ -1,4 +1,47 @@
-<div *ngFor="let project of projects">
-  <app-project-thumbnail [project]="project"></app-project-thumbnail>
-</div>
+<div class="container page-content">
+  <div class="row">
+    <h1 class="title">
+      <i class="fa fa-pencil-square" aria-hidden="true"></i>
+      Projects
+    </h1>
+  </div>
 
+  <ul class="nav sub-nav nav-tabs">
+    <li class="nav-item" (click)="switchTab(0)">
+      <a class="nav-link" [ngClass]="{'active': currentTab===0}">
+        Computer Science
+      </a>
+    </li>
+    <li class="nav-item" (click)="switchTab(1)">
+      <a class="nav-link" [ngClass]="{'active': currentTab===1}">
+        Chemistry
+      </a>
+    </li>
+  </ul>
+
+  <div *ngIf="currentTab===0">
+    <h5 class="mt-4">InterSystems Corporation:</h5>
+    <div class="row">
+      <div class="col-12 col-md-6 col-lg-4 mb-2" *ngFor="let project of projectsIntersystems">
+        <app-project-thumbnail [project]="project"></app-project-thumbnail>
+      </div>
+    </div>
+
+    <h5 class="mt-5">Tufts University:</h5>
+    <div class="row">
+      <div class="col-12 col-md-6 col-lg-4 mb-4" *ngFor="let project of projectsTufts">
+        <app-project-thumbnail [project]="project"></app-project-thumbnail>
+      </div>
+    </div>
+  </div>
+
+  <div *ngIf="currentTab===1">
+    <h5 class="text first mt-4">University of Florida (Dr. Christou's Group):</h5>
+    <div class="row">
+      <div class="col-12 col-md-6 col-lg-4 mb-2" *ngFor="let project of projectsFlorida">
+        <app-project-thumbnail [project]="project"></app-project-thumbnail>
+      </div>
+    </div>
+  </div>
+
+</div>

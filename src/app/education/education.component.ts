@@ -16,24 +16,21 @@ export class EducationComponent implements OnInit {
 
   educationList: any[] = [
     {
-      university: 'Tufts University',
-      logo: 'http://res.cloudinary.com/dbinsowan/image/upload/v1515353428/tufts__logo_cl2fsm.jpg',
+      logo: 'http://res.cloudinary.com/dbinsowan/image/upload/v1515967733/Tufts_logo_za2hbc.jpg',
       major: 'Computer Science,  GPA: 3.95',
       startDate: '2015',
       endDate: '2017',
       degree: 'Master\'s Degree'
     },
     {
-      university: 'Tufts University',
-      logo: 'http://res.cloudinary.com/dbinsowan/image/upload/v1515353428/tufts__logo_cl2fsm.jpg',
+      logo: 'http://res.cloudinary.com/dbinsowan/image/upload/v1515967733/Tufts_logo_za2hbc.jpg',
       major: 'Computer Science, GPA: 4.00',
       startDate: '2014',
       endDate: '2015',
       degree: 'Post-Baccalaureate'
     },
     {
-      university: 'University of Florida',
-      logo: 'http://res.cloudinary.com/dbinsowan/image/upload/v1515353429/uf_logo_gvlm6u.png',
+      logo: 'http://res.cloudinary.com/dbinsowan/image/upload/v1515968034/uf_logo_jojuoa.png',
       major: 'Chemistry, GPA: 3.87',
       startDate: '2010',
       endDate: '2014',
@@ -41,7 +38,7 @@ export class EducationComponent implements OnInit {
     },
     {
       university: 'Jilin University',
-      logo: 'http://res.cloudinary.com/dbinsowan/image/upload/v1515353428/jilinU_logo_kz9tmh.jpg',
+      logo: 'http://res.cloudinary.com/dbinsowan/image/upload/v1515968295/Jilin_logo_ngkseg.jpg',
       major: 'Chemistry, GPA: 3.84',
       startDate: '2006',
       endDate: '2010',

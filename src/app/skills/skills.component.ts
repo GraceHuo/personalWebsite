@@ -8,8 +8,8 @@ export class SkillsComponent implements OnInit {
   skillLevels: any[] = [
     {
       code: 1,
-      name: 'Export',
-      description: 'Skills I am using in daily life'
+      name: 'Expert',
+      description: 'Skills I am using in daily work'
     },
     {
       code: 2,
@@ -54,17 +54,17 @@ export class SkillsComponent implements OnInit {
               level: 1
             },
             {
-              name: 'TypeScript',
-              level: 2
-            },
-            {
               name: 'Object-Oriented Programming',
               level: 1
             },
             {
               name: 'Functional Programming',
               level: 1
-            }
+            },
+            {
+              name: 'TypeScript',
+              level: 2
+            },
           ]
         },
         {
@@ -97,12 +97,12 @@ export class SkillsComponent implements OnInit {
           title: 'JavaScript Libraries (including but not limited to)',
           items: [
             {
-              name: 'jQuery',
-              level: 2
-            },
-            {
               name: 'Lodash / Underscore.js',
               level: 1
+            },
+            {
+              name: 'jQuery',
+              level: 2
             },
             {
               name: 'HighCharts',
@@ -174,12 +174,20 @@ export class SkillsComponent implements OnInit {
       ],
     },
     {
-      title: 'Other Software Dev Skills',
-      description: 'I am open to all kinds of new techniques, skills and concept.',
+      title: 'Full-Stack Dev Skills',
+      description: 'I am on the track for a full-stack developer. And I am open to all kinds of new techniques, skills and concepts.',
       list: [
         {
           title: 'Languages',
           items: [
+            {
+              name: 'SQL',
+              level: 2
+            },
+            {
+              name: 'Caché ObjectScript',
+              level: 2
+            },
             {
               name: 'Java',
               level: 2
@@ -202,16 +210,16 @@ export class SkillsComponent implements OnInit {
               level: 2
             },
             {
-              name: 'NodeJs',
-              level: 3
-            },
-            {
               name: 'Android',
               level: 2
             },
             {
               name: 'Matlab',
               level: 2
+            },
+            {
+              name: 'NodeJs',
+              level: 3
             }
           ],
         }

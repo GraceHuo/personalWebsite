@@ -6,13 +6,23 @@ import {ProjectsService} from '../services/projects.service';
   styleUrls: ['./projects-list.component.scss']
 })
 export class ProjectsListComponent implements OnInit {
-  projects: any[];
+  projectsIntersystems: any[];
+  projectsTufts: any[];
+  projectsFlorida: any[];
+
+  currentTab = 0; // 0 - computer science, 1 - chemistry
+
+  switchTab(index) {
+    this.currentTab = index;
+  }
 
   constructor(private projectsService: ProjectsService) {
   }
 
   ngOnInit() {
-    this.projects = this.projectsService.getProjects();
+    this.projectsIntersystems = this.projectsService.getProjectsIntersystems();
+    this.projectsTufts = this.projectsService.getProjectsTufts();
+    this.projectsFlorida = this.projectsService.getProjectsFlorida();
   }
 
 }

@@ -1,3 +1,50 @@
-<p>
-  project-details {{project.title}}!
-</p>
+<div class="container page-content pt-4">
+  <div class="row mb-3">
+    <button class="btn" [routerLink]="['/projects']">Back</button>
+  </div>
+  <div class="row">
+    <div class="col-12 col-sm-4">
+      <img class="card-img-top img-thumbnail" src="{{project.image}}" alt="project_image">
+    </div>
+    <div class="col-12 col-sm-8">
+      <h4 class="text first">{{project?.title}}</h4>
+      <div> {{project?.location}}</div>
+      <div>
+        {{project?.startDate}} -
+        <span *ngIf="project?.endDate">{{project?.endDate}} </span>
+        <span *ngIf="!project?.endDate">Present </span>
+      </div>
+
+      <!--descriptions-->
+      <div class="mt-3">
+        <div class="text second">Descriptions:</div>
+        <div>{{project?.description}}</div>
+      </div>
+
+      <!--details-->
+      <div class="mt-3">
+        <div class="text second">Details:</div>
+        <div>{{project?.details}}</div>
+        <div class="ml-2" *ngFor="let item of project.detailsList">
+          <li>{{item}}</li>
+        </div>
+      </div>
+
+      <!--skills-->
+      <div class="mt-3">
+        <div class="text second">Main Technologies:</div>
+        <div class="ml-2" *ngFor="let item of project.skills">
+          <li>{{item}}</li>
+        </div>
+      </div>
+
+      <!--url and report-->
+      <div class="mt-3">
+        <button *ngIf="project.url" class="btn"><a href="{{project.url}}" target="_blank">Project Url</a></button>
+        <button *ngIf="project.report" class="btn"><a href="{{project.report}}" target="_blank">Report</a></button>
+        <button *ngIf="project.thesis" class="btn"><a href="{{project.thesis}}" target="_blank">Thesis</a></button>
+      </div>
+
+    </div>
+  </div>
+</div>
