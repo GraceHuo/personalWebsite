@@ -20,14 +20,14 @@
   </ul>
 
   <div *ngIf="currentTab===0">
-    <h5 class="mt-4">InterSystems Corporation:</h5>
+    <h5 class="mt-4"><b>InterSystems Corporation:</b></h5>
     <div class="row">
       <div class="col-12 col-md-6 col-lg-4 mb-2" *ngFor="let project of projectsIntersystems">
         <app-project-thumbnail [project]="project"></app-project-thumbnail>
       </div>
     </div>
 
-    <h5 class="mt-5">Tufts University:</h5>
+    <h5 class="mt-5"><b>Tufts University:</b></h5>
     <div class="row">
       <div class="col-12 col-md-6 col-lg-4 mb-4" *ngFor="let project of projectsTufts">
         <app-project-thumbnail [project]="project"></app-project-thumbnail>
@@ -36,7 +36,7 @@
   </div>
 
   <div *ngIf="currentTab===1">
-    <h5 class="text first mt-4">University of Florida (Dr. Christou's Group):</h5>
+    <h5 class="text mt-4"><b>University of Florida (Dr. Christou's Group):</b></h5>
     <div class="row">
       <div class="col-12 col-md-6 col-lg-4 mb-2" *ngFor="let project of projectsFlorida">
         <app-project-thumbnail [project]="project"></app-project-thumbnail>

@@ -4,15 +4,15 @@
 
     <!-- artical -->
     <div class="timeline-article"
-         *ngFor="let article of list">
+         *ngFor="let article of list; let i = index">
       <div class="timeline-break-point"></div>
       <div class="timeline-container timeline-container-left wow fadeInLeft">
         <h5 class="timeline-title">
           <b>
-            {{article.startDate}} -
-            <span *ngIf="article.endDate">{{article.endDate}} </span>
+            {{article.startDate | date:'MMM yyyy'}} -
+            <span *ngIf="article.endDate">{{article.endDate | date:'MMM yyyy'}} </span>
             <span *ngIf="!article.endDate">Present </span>
-          </b></h5>
+        </b></h5>
         <span> {{article[config.leftContent]}} </span>
       </div>
       <div class="timeline-container timeline-container-right wow fadeInRight">
@@ -20,12 +20,18 @@
           <img class="inline-logo" src="{{article.logo}}" alt="logo">
           <b>{{article[config.rightTitle]}}</b>
         </h5>
-        <span>
-          {{article[config.rightContent]}}
-        </span>
-        <li *ngFor="let item of article[config.rightList]">
-          {{item}}
-        </li>
+        <span>{{article[config.rightContent]}}</span>
+        <div *ngIf="article[config.rightList]">
+
+          <a class="details-link" data-toggle="collapse" href="{{'#collapse'+i}}" role="button" aria-expanded="false" aria-controls="collapseExample">
+            Details
+          </a>
+          <div class="collapse" id="{{'collapse'+i}}">
+            <li *ngFor="let item of article[config.rightList]">
+              {{item}}
+            </li>
+          </div>
+        </div>
       </div>
     </div> <!-- end of article -->
 

@@ -9,39 +9,46 @@ export class CertificationsAwardsComponent implements OnInit {
   certificationsList: any[] = [
     {
       title: 'Building and Managing HL7 Productions',
-      from: 'Intersystems',
-      date: 'Mar 2017'
+      from: 'InterSystems',
+      date: '2017'
     },
     {
       title: 'Cache Foundations',
-      from: 'Intersystems',
-      date: 'April 2017'
+      from: 'InterSystems',
+      date: '2017'
     },
     {
       title: 'HealthShare Information Exchange Fundamentals',
-      from: 'Intersystems',
-      date: 'Jun 2017'
+      from: 'InterSystems',
+      date: '2017'
     }
   ];
 
   awardsList: any[] = [
     {
-      title: 'National Scholarship of China (Top 1%)',
-      date: '2007'
+      title: 'First Prize Scholarship of National University Student Innovation Program (Top 1%)',
+      date: '2009'
+    },
+    {
+      title: 'Outstanding Student Awards (Top 2%)',
+      date: '2007, 2008 & 2009'
     },
     {
       title: 'Major Award of Jilin University (Top 5%)',
       date: '2008 & 2009'
     },
     {
-      title: 'Dong Rong Scholarship',
-      date: '2008'
+      title: 'Suzhou Gongyeyuan Scholarship',
+      date: '2007'
     },
     {
-      title: 'First Prize Scholarship of National University Student Innovation Program',
-      date: '2009'
+      title: 'Dongrong Scholarship',
+      date: '2007'
+    },
+    {
+      title: 'National Scholarship of China (Top 1%)',
+      date: '2007'
     }
-
   ];
 
   constructor() {

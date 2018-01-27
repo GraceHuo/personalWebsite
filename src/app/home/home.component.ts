@@ -25,13 +25,17 @@ export class HomeComponent implements OnInit {
   ];
   name: String = 'Yan (Grace) Huo';
   position: String = 'software developer';
+  descriptions = [
+    'focused on front-end development',
+    'started with the full-stack track'
+  ];
   phone: String = '352-278-6271';
   email: String = 'yangracehuo@gmail.com';
   address = {
-    street: '533 Mystic Valley Pkwy',
-    city: 'Somerville',
-    state: 'MA',
-    zip: '02144'
+    street: '12804 Quail Creek Dr.',
+    city: 'Pearland',
+    state: 'TX',
+    zip: '77584'
   };
 
   characteristics = [

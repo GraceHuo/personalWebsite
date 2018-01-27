@@ -12,37 +12,47 @@ export class EducationComponent implements OnInit {
     leftContent: 'degree',
     rightTitle: 'university',
     rightContent: 'major',
+    rightList: 'details'
   };
 
   educationList: any[] = [
     {
       logo: 'http://res.cloudinary.com/dbinsowan/image/upload/v1515967733/Tufts_logo_za2hbc.jpg',
       major: 'Computer Science,  GPA: 3.95',
-      startDate: '2015',
-      endDate: '2017',
-      degree: 'Master\'s Degree'
+      startDate: '08/01/2015',
+      endDate: '05/31/2017',
+      degree: 'Master\'s Degree',
+      details: ['MS student focused on user interface software',
+      'Research Assistant in Human Computer Interaction Lab',
+        'Teaching Assistant for courses “Database Systems” and “Algorithm"']
     },
     {
       logo: 'http://res.cloudinary.com/dbinsowan/image/upload/v1515967733/Tufts_logo_za2hbc.jpg',
       major: 'Computer Science, GPA: 4.00',
-      startDate: '2014',
-      endDate: '2015',
-      degree: 'Post-Baccalaureate'
+      startDate: '08/01/2014',
+      endDate: '05/31/2015',
+      degree: 'Post-Baccalaureate',
+      details: ['Prepared for a new career in Computer Science']
     },
     {
       logo: 'http://res.cloudinary.com/dbinsowan/image/upload/v1515968034/uf_logo_jojuoa.png',
       major: 'Chemistry, GPA: 3.87',
-      startDate: '2010',
-      endDate: '2014',
-      degree: 'Master\'s Degree'
+      startDate: '08/01/2010',
+      endDate: '05/31/2014',
+      degree: 'Master\'s Degree',
+      details: ['PhD candidate focused on bioinorganic chemistry and magnetic applications of multinuclear metal complexes',
+        'Teaching Assistant for courses “General Chemistry”, “Analytical Chemistry” and “General Chemistry Lab”'
+      ]
     },
     {
       university: 'Jilin University',
       logo: 'http://res.cloudinary.com/dbinsowan/image/upload/v1515968295/Jilin_logo_ngkseg.jpg',
       major: 'Chemistry, GPA: 3.84',
-      startDate: '2006',
-      endDate: '2010',
-      degree: 'Bachelor\'s Degree'
+      startDate: '08/01/2006',
+      endDate: '05/31/2010',
+      degree: 'Bachelor\'s Degree',
+      details: ['BS student focused on inorganic chemistry',
+        'Research Assistant in State Key Laboratory of Inorganic Synthesis & Preparative Chemistry']
     }
   ];
 

@@ -38,7 +38,8 @@
           <!--right-->
           <div class="col-sm-6 home-right-container wow fadeInRightBig" data-wow-duration="1s">
             <h2> {{name}} </h2>
-            <b>{{position|uppercase}}</b>
+            <h5>{{position|uppercase}}</h5>
+            <span *ngFor="let des of descriptions">{{des}}<br/></span>
             <h6><b>Phone:</b></h6>
             <span>{{phone}}</span>
             <h6><b>Email:</b></h6>

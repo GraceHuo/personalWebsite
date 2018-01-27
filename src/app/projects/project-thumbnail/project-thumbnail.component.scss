@@ -1,6 +1,6 @@
 .card {
   &:active, &:hover, &:focus {
-    outline : 2px solid #68D0D3;
+    outline : 2px solid #4FB7BA;
   }
   height : 100%;
 
@@ -10,13 +10,13 @@
       margin-bottom: 3rem;
     }
     .btn {
-      background-color : #68D0D3;
+      background-color : #4FB7BA;
       color            : #FFF;
       position         : absolute;
       bottom           : 1rem;
       right            : 1rem;
       &:hover {
-        background-color : darken(#68D0D3, 10)
+        background-color : darken(#4FB7BA, 10)
       }
     }
   }

@@ -30,25 +30,12 @@ export class SkillsComponent implements OnInit {
       'the followings are the techniques and tools I use to develop reliable and user-friendly websites.',
       list: [
         {
-          title: 'Fundamentals',
+          title: 'Programming',
           items: [
             {
               name: 'HTML',
               level: 1
             },
-            {
-              name: 'CSS',
-              level: 1
-            },
-            {
-              name: 'SASS',
-              level: 1
-            }
-          ]
-        },
-        {
-          title: 'Programming',
-          items: [
             {
               name: 'JavaScript',
               level: 1
@@ -81,8 +68,16 @@ export class SkillsComponent implements OnInit {
           ]
         },
         {
-          title: 'Front-End Frameworks',
+          title: 'Styling',
           items: [
+            {
+              name: 'CSS',
+              level: 1
+            },
+            {
+              name: 'SASS',
+              level: 1
+            },
             {
               name: 'Foundation',
               level: 1
@@ -119,19 +114,6 @@ export class SkillsComponent implements OnInit {
           ]
         },
         {
-          title: 'Working With Backend',
-          items: [
-            {
-              name: 'RESTful',
-              level: 1
-            },
-            {
-              name: 'JSON',
-              level: 1
-            }
-          ]
-        },
-        {
           title: 'Design Basic',
           items: [
             {
@@ -152,42 +134,60 @@ export class SkillsComponent implements OnInit {
               level: 3
             }
           ]
-        },
-        {
-          title: 'Version Control',
-          items: [
-            {
-              name: 'Git',
-              level: 1
-            },
-          ]
-        },
-        {
-          title: 'Automation',
-          items: [
-            {
-              name: 'Gulp',
-              level: 2
-            },
-          ],
         }
       ],
     },
     {
-      title: 'Full-Stack Dev Skills',
+      title: 'Back-End Dev Skills',
       description: 'I am on the track for a full-stack developer. And I am open to all kinds of new techniques, skills and concepts.',
       list: [
         {
-          title: 'Languages',
+          title: 'Programming',
           items: [
-            {
-              name: 'SQL',
-              level: 2
-            },
             {
               name: 'Caché ObjectScript',
               level: 2
             },
+            {
+              name: 'NodeJs',
+              level: 3
+            },
+            {
+              name: 'ExpressJs',
+              level: 3
+            }
+          ],
+        },
+        {
+          title: 'Database',
+          items: [
+            {
+              name: 'SQL',
+              level: 2
+            }
+          ]
+        },
+        {
+          title: 'API',
+          items: [
+            {
+              name: 'RESTful',
+              level: 1
+            },
+            {
+              name: 'JSON',
+              level: 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      title: 'Other Dev Skills',
+      list: [
+        {
+          title: 'Programming',
+          items: [
             {
               name: 'Java',
               level: 2
@@ -199,12 +199,7 @@ export class SkillsComponent implements OnInit {
             {
               name: 'C++ / C',
               level: 2
-            }
-          ],
-        },
-        {
-          title: 'Others',
-          items: [
+            },
             {
               name: 'Ruby on Rails',
               level: 2
@@ -216,11 +211,29 @@ export class SkillsComponent implements OnInit {
             {
               name: 'Matlab',
               level: 2
+            }
+          ],
+        },
+        {
+          title: 'Version Control',
+          items: [
+            {
+              name: 'Git',
+              level: 1
             },
             {
-              name: 'NodeJs',
-              level: 3
-            }
+              name: 'Perforce',
+              level: 1
+            },
+          ]
+        },
+        {
+          title: 'Automation',
+          items: [
+            {
+              name: 'Gulp',
+              level: 2
+            },
           ],
         }
       ]
