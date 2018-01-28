@@ -1,6 +1,6 @@
 <div class="container page-content">
   <div class="row">
-    <h1 class="title">
+    <h1 class="title ml-3">
       <i class="fa fa-suitcase" aria-hidden="true"></i>
       Experience
     </h1>
@@ -9,12 +9,12 @@
   <ul class="nav sub-nav nav-tabs">
     <li class="nav-item" (click)="switchTab(0)">
       <a class="nav-link" [ngClass]="{'active': currentTab===0}">
-        Industrial Experience
+        Industrial <span class="hidden-small">Experience</span>
       </a>
     </li>
     <li class="nav-item" (click)="switchTab(1)">
       <a class="nav-link" [ngClass]="{'active': currentTab===1}">
-        Academic Experience
+        Academic <span class="hidden-small">Experience</span>
       </a>
     </li>
   </ul>

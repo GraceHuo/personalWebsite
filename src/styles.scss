@@ -16,7 +16,6 @@ body {
   background-size     : cover;
   background-position : center;
   width               : 100%;
-  min-height          : 630px;
 }
 
 .btn-circle {
@@ -88,6 +87,32 @@ body {
 
 .inline-logo {
   height:1.6rem;
+}
+
+div.shown-small {
+  display: none;
+}
+
+// mobile
+.navbar-collapse {
+  background-color: #343a40;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .hidden-small {
+    display: none !important;
+  }
+  div.shown-small {
+    display: flex;
+  }
+
+  .navbar-nav {
+    li {
+      border-top: 1px solid #FFF;
+      padding-left: 1rem;
+    }
+  }
 }
 
 

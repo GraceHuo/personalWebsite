@@ -57,12 +57,16 @@ export class HomeComponent implements OnInit {
     }
   ];
 
+  isArrowHidden = false;
+
   scrollDown() {
     document.getElementsByClassName('down')[0].scrollIntoView({behavior: 'smooth'});
+    this.isArrowHidden = true;
   }
 
   scrollUp() {
     document.getElementsByClassName('up')[0].scrollIntoView({behavior: 'smooth'});
+    this.isArrowHidden = false;
   }
 
   constructor() {

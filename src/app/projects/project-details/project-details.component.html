@@ -1,13 +1,13 @@
 <div class="container page-content pt-4">
   <div class="row mb-3">
-    <button class="btn" [routerLink]="['/projects']">Back</button>
+    <button class="btn ml-3" [routerLink]="['/projects']">Back</button>
   </div>
   <div class="row">
     <div class="col-12 col-sm-4">
       <img class="card-img-top img-thumbnail" src="{{project.image}}" alt="project_image">
     </div>
     <div class="col-12 col-sm-8">
-      <h4 class="text first">{{project?.title}}</h4>
+      <h4 class="text first mt-4 mt-sm-0">{{project?.title}}</h4>
       <div> {{project?.location}}</div>
       <div>
         {{project?.startDate | date:'MMM yyyy'}} -
