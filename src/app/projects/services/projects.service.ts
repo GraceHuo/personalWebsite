@@ -41,7 +41,7 @@ const PROJECTS = [
     details: 'Was in charge of the UI development for this project',
     detailsList: [
       'Started the UI project and created the main application',
-      'Built a user-friendly, responsive user interface'
+      'Built user-friendly, responsive user interfaces'
     ]
   },
   {
@@ -60,7 +60,46 @@ const PROJECTS = [
     ]
   },
   {
-    id: 3,
+    id: 5,
+    title: 'Electrodermal Activity (EDA) Arousal Detector',
+    image: 'http://res.cloudinary.com/dbinsowan/image/upload/v1515340040/project_eda_lg1y3z.jpg',
+    startDate: '12/01/2016',
+    endDate: '02/28/2017',
+    location: 'Tufts University',
+    skills: ['Human–computer Interaction', 'Java', 'Android'],
+    url: 'https://github.com/yanhuowang/EmotionArousalsDetectorEmpatica',
+    description: 'Android application to communicate with smart wristband. ' +
+    'Used by Tufts HCI lab to visualize Electrodermal Activity (EDA) value changes and detect emotion arousals in real-time ',
+    detailsList: [
+      'Designed and implemented an Android application to communicate with smart wristband (Empatica E4) ' +
+      'and detect emotion arousals in real-time',
+      'Applied the app to capture human EDA signal and detect EDA arousals',
+      'Investigated how movies will affect human\'s emotions',
+      'Currently used by Tufts Human-Computer Interaction Lab for for further research'
+    ]
+  },
+  {
+    id: 4,
+    title: 'Sentiment Analysis on Movie Reviews',
+    image: 'http://res.cloudinary.com/dbinsowan/image/upload/v1515340040/sentiment_dsrfrm.jpg',
+    startDate: '03/01/2016',
+    endDate: '05/31/2016',
+    location: 'Tufts University',
+    skills: ['Python', 'Nature Language Processing'],
+    url: 'https://github.com/yanhuowang/NaturalLanguageProcessing',
+    report: 'https://github.com/yanhuowang/NaturalLanguageProcessing/blob/master/sentiment_analysis/nlp_report.pdf',
+    description: 'Natural Language Processing (NLP) project using Python to investigate ' +
+    'how machine learning based Maximum Entropy classifier works in sentiment analysis',
+    details: 'Was rated as top term-project of course "Natural Language processing"',
+    detailsList: [
+      'Applied several natural language processing techniques (e.g part of speed tagging, language modeling, etc.)',
+      'Investigated Different feature sets for training (e.g. unigram, bigram, position, etc.)',
+      'Used information gain calculation to prevent from overfitting.',
+      'Used Naive Bayes classifier as baseline'
+    ]
+  },
+  {
+    id: 5,
     title: 'Web-Based Incident Reporting System',
     image: 'http://res.cloudinary.com/dbinsowan/image/upload/v1515340039/project_incidents_a13dw9.jpg',
     startDate: '01/01/2016',
@@ -78,45 +117,6 @@ const PROJECTS = [
       'Optimized static content using technics like expiry, content delivery network, gzip, etc',
       'Wrote RESTful APIs using Grape.',
       'Implemented polling and memory aching with Redis'
-    ]
-  },
-  {
-    id: 4,
-    title: 'Sentiment Analysis on Movie Reviews',
-    image: 'http://res.cloudinary.com/dbinsowan/image/upload/v1515340040/sentiment_dsrfrm.jpg',
-    startDate: '03/01/2016',
-    endDate: '05/31/2016',
-    location: 'Tufts University',
-    skills: ['Python', 'Nature Language Processing'],
-    url: 'https://github.com/yanhuowang/NaturalLanguageProcessing',
-    report: 'https://github.com/yanhuowang/NaturalLanguageProcessing/blob/master/sentiment_analysis/nlp_report.pdf',
-    description: 'Natural Language Processing (NLP) project using Python to investigate ' +
-    'how machine learning based Maximum Entropy classifier works in sentiment analysis',
-    details: 'Rated as top term-project of course "Natural Language processing"',
-    detailsList: [
-      'Applied several natural language processing techniques (e.g part of speed tagging, language modeling, etc.)',
-      'Investigated Different feature sets for training (e.g. unigram, bigram, position, etc.)',
-      'Used information gain calculation to prevent from overfitting.',
-      'Used Naive Bayes classifier as baseline'
-    ]
-  },
-  {
-    id: 5,
-    title: 'Electrodermal Activity (EDA) Arousal Detector',
-    image: 'http://res.cloudinary.com/dbinsowan/image/upload/v1515340040/project_eda_lg1y3z.jpg',
-    startDate: '12/01/2016',
-    endDate: '02/28/2017',
-    location: 'Tufts University',
-    skills: ['Human–computer Interaction', 'Java', 'Android'],
-    url: 'https://github.com/yanhuowang/EmotionArousalsDetectorEmpatica',
-    description: 'An Android application to visualize Electrodermal Activity (EDA) value changes ' +
-    'and detect emotion arousals in real-time using smart wristband.',
-    detailsList: [
-      'Designed and implemented an Android application to communicate with smart wristband (Empatica E4) ' +
-      'in real-time and detect emotion arousals',
-      'Applied the app to capture human EDA signal and detect EDA arousal',
-      'Investigated how movies will affect human\'s emotions',
-      'currently used by Tufts Human-Computer Interaction Lab for for further research'
     ]
   },
   {

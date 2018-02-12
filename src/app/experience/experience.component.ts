@@ -48,8 +48,8 @@ export class ExperienceComponent implements OnInit {
       logo: 'http://res.cloudinary.com/dbinsowan/image/upload/v1515967733/Tufts_logo_za2hbc.jpg',
       startDate: '08/01/2016',
       endDate: '12/31/2016',
-      details: 'Designed and developed an Android appliction to visualize EDA value changes ' +
-      'and to detect emotion arousals in real time using Empatica E4 wristband.',
+      details: 'Designed and implemented an Android application to communicate with smart wristband. ' +
+      'Investigated how movies will affect human\'s emotions using this app.'
     },
     {
       company: 'Department of Computer Science',
@@ -57,7 +57,7 @@ export class ExperienceComponent implements OnInit {
       logo: 'http://res.cloudinary.com/dbinsowan/image/upload/v1515967733/Tufts_logo_za2hbc.jpg',
       startDate: '09/01/2015',
       endDate: '05/31/2016',
-      details: 'For Courses “Database Systems” and “Algorithm"',
+      details: 'TA\'ed Courses “Database Systems” and “Algorithm"',
       detailsList: [
         'Reinforced complex concepts and guided students on problems about SQL and NoSQL systems like MongoDB, Redis, etc',
         'Provided assistance with problems on design and analysis of algorithms']
@@ -76,7 +76,7 @@ export class ExperienceComponent implements OnInit {
       logo: 'http://res.cloudinary.com/dbinsowan/image/upload/v1515968034/uf_logo_jojuoa.png',
       startDate: '09/01/2010',
       endDate: '05/31/2014',
-      details: 'For Courses “General Chemistry”, “Analytical Chemistry” and “General Chemistry Lab”',
+      details: 'TA\'ed Courses “General Chemistry”, “Analytical Chemistry” and “General Chemistry Lab”',
       detailsList: [
         'Lectured on General Chemistry Discussion topics, teaching basic chemical knowledge',
         'Lead general chemistry lab section'

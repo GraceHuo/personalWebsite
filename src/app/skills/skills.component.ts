@@ -155,6 +155,10 @@ export class SkillsComponent implements OnInit {
             {
               name: 'ExpressJs',
               level: 3
+            },
+            {
+              name: 'Sails',
+              level: 3
             }
           ],
         },

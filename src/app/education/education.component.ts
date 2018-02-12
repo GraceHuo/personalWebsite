@@ -32,7 +32,7 @@ export class EducationComponent implements OnInit {
       startDate: '08/01/2014',
       endDate: '05/31/2015',
       degree: 'Post-Baccalaureate',
-      details: ['Prepared for a new career in Computer Science']
+      details: ['Prepared for a new career in Computer Science by taking all required courses for Computer Science major BS']
     },
     {
       logo: 'http://res.cloudinary.com/dbinsowan/image/upload/v1515968034/uf_logo_jojuoa.png',
@@ -110,6 +110,14 @@ export class EducationComponent implements OnInit {
     },
     {
       name: 'AngularJS Fundamentals',
+      from: 'Pluralsight'
+    },
+    {
+      name: 'Two Tier Enterprise App and API Development with AngularJS & Sails',
+      from: 'Pluralsight'
+    },
+    {
+      name: 'RESTful Web Services with Node.js and Express',
       from: 'Pluralsight'
     },
     {

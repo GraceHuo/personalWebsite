@@ -52,7 +52,7 @@ export class HomeComponent implements OnInit {
     },
     {
       name: 'Team Player',
-      details: 'I enjoy being a part of a team and make contribution to the team. ' +
+      details: 'I always enjoy being a part of a team and make contribution to the team. ' +
       'My colleagues enjoy working with me as well. They describe me as "reliable, flexible and organized".'
     }
   ];
