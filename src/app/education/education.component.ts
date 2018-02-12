@@ -22,7 +22,7 @@ export class EducationComponent implements OnInit {
       startDate: '08/01/2015',
       endDate: '05/31/2017',
       degree: 'Master\'s Degree',
-      details: ['MS student focused on user interface software',
+      details: ['MS student focused on web engineer',
       'Research Assistant in Human Computer Interaction Lab',
         'Teaching Assistant for courses “Database Systems” and “Algorithm"']
     },
