@@ -60,7 +60,7 @@ const PROJECTS = [
     ]
   },
   {
-    id: 5,
+    id: 3,
     title: 'Electrodermal Activity (EDA) Arousal Detector',
     image: 'http://res.cloudinary.com/dbinsowan/image/upload/v1515340040/project_eda_lg1y3z.jpg',
     startDate: '12/01/2016',

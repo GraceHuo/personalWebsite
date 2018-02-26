@@ -25,20 +25,33 @@ export class SkillsComponent implements OnInit {
 
   skills: any[] = [
     {
-      title: 'Front-End Dev Skills',
-      description: 'I am a front-end developer, ' +
-      'the followings are the techniques and tools I use to develop reliable and user-friendly websites.',
       list: [
         {
-          title: 'Programming',
+          title: 'Programming Languages',
           items: [
-            {
-              name: 'HTML',
-              level: 1
-            },
             {
               name: 'JavaScript',
               level: 1
+            },
+            {
+              name: 'TypeScript',
+              level: 2
+            },
+            {
+              name: 'Java',
+              level: 2
+            },
+            {
+              name: 'Python',
+              level: 2
+            },
+            {
+              name: 'C++ / C',
+              level: 2
+            },
+            {
+              name: 'Caché ObjectScript',
+              level: 2
             },
             {
               name: 'Object-Oriented Programming',
@@ -49,13 +62,17 @@ export class SkillsComponent implements OnInit {
               level: 1
             },
             {
-              name: 'TypeScript',
+              name: 'Android',
               level: 2
             },
+            {
+              name: 'Matlab',
+              level: 2
+            }
           ]
         },
         {
-          title: 'JavaScript Frameworks',
+          title: 'Frameworks',
           items: [
             {
               name: 'AngularJS',
@@ -64,26 +81,21 @@ export class SkillsComponent implements OnInit {
             {
               name: 'Angular2',
               level: 2
-            }
-          ]
-        },
-        {
-          title: 'Styling',
-          items: [
-            {
-              name: 'CSS',
-              level: 1
             },
             {
-              name: 'SASS',
-              level: 1
+              name: 'NodeJs',
+              level: 2
             },
             {
-              name: 'Foundation',
-              level: 1
+              name: 'ExpressJs',
+              level: 2
             },
             {
-              name: 'Bootstrap',
+              name: 'Sails',
+              level: 3
+            },
+            {
+              name: 'Ruby on Rails',
               level: 2
             }
           ]
@@ -112,61 +124,49 @@ export class SkillsComponent implements OnInit {
               level: 2
             }
           ]
-        },
-        {
-          title: 'Design Basic',
-          items: [
-            {
-              name: 'Responsive Design',
-              level: 1
-            }
-          ]
-        },
-        {
-          title: 'Testing',
-          items: [
-            {
-              name: 'Jasmine Framework',
-              level: 1
-            },
-            {
-              name: 'Protractor Framework',
-              level: 3
-            }
-          ]
         }
       ],
     },
     {
-      title: 'Back-End Dev Skills',
-      description: 'I am on the track for a full-stack developer. And I am open to all kinds of new techniques, skills and concepts.',
       list: [
         {
-          title: 'Programming',
+          title: 'Styling',
           items: [
             {
-              name: 'Caché ObjectScript',
+              name: 'HTML',
+              level: 1
+            },
+            {
+              name: 'CSS',
+              level: 1
+            },
+            {
+              name: 'SASS',
+              level: 1
+            },
+            {
+              name: 'Foundation',
+              level: 1
+            },
+            {
+              name: 'Bootstrap',
               level: 2
-            },
-            {
-              name: 'NodeJs',
-              level: 3
-            },
-            {
-              name: 'ExpressJs',
-              level: 3
-            },
-            {
-              name: 'Sails',
-              level: 3
             }
-          ],
+          ]
         },
         {
           title: 'Database',
           items: [
             {
               name: 'SQL',
+              level: 2
+            },
+            {
+              name: 'MongoDB',
+              level: 2
+            },
+            {
+              name: 'Redis',
               level: 2
             }
           ]
@@ -183,43 +183,35 @@ export class SkillsComponent implements OnInit {
               level: 1
             }
           ]
-        }
-      ]
-    },
-    {
-      title: 'Other Dev Skills',
-      list: [
-        {
-          title: 'Programming',
-          items: [
-            {
-              name: 'Java',
-              level: 2
-            },
-            {
-              name: 'Python',
-              level: 2
-            },
-            {
-              name: 'C++ / C',
-              level: 2
-            },
-            {
-              name: 'Ruby on Rails',
-              level: 2
-            },
-            {
-              name: 'Android',
-              level: 2
-            },
-            {
-              name: 'Matlab',
-              level: 2
-            }
-          ],
         },
         {
-          title: 'Version Control',
+          title: 'Design Basic',
+          items: [
+            {
+              name: 'Responsive Design',
+              level: 1
+            }
+          ]
+        },
+        {
+          title: 'Testing',
+          items: [
+            {
+              name: 'Jasmine',
+              level: 1
+            },
+            {
+              name: 'Mocha',
+              level: 3
+            },
+            {
+              name: 'Protractor',
+              level: 3
+            }
+          ]
+        },
+        {
+          title: 'Engineering Tools',
           items: [
             {
               name: 'Git',
@@ -229,16 +221,19 @@ export class SkillsComponent implements OnInit {
               name: 'Perforce',
               level: 1
             },
-          ]
-        },
-        {
-          title: 'Automation',
-          items: [
             {
               name: 'Gulp',
-              level: 2
+              level: 1
             },
-          ],
+            {
+              name: 'Unix/Linux',
+              level: 1
+            },
+            {
+              name: 'AWS',
+              level: 2
+            }
+          ]
         }
       ]
     }];

@@ -13,6 +13,7 @@ import { EducationComponent } from './education/education.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { CertificationsAwardsComponent } from './certifications-awards/certifications-awards.component';
 import { TimelineComponent } from './timeline/timeline.component';
+import { ResumeComponent } from './resume/resume.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { TimelineComponent } from './timeline/timeline.component';
     EducationComponent,
     ExperienceComponent,
     CertificationsAwardsComponent,
-    TimelineComponent
+    TimelineComponent,
+    ResumeComponent
   ],
   imports: [
     BrowserModule,

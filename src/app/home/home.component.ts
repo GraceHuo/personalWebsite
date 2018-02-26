@@ -8,7 +8,7 @@ export class HomeComponent implements OnInit {
   windowHeight = window.innerHeight - 50;
   homeButtons: any[] = [
     {
-      routerLink: '/#',
+      routerLink: '/resume',
       label: 'RESUME',
       cssClass: 'first'
     },
@@ -26,8 +26,7 @@ export class HomeComponent implements OnInit {
   name: String = 'Yan (Grace) Huo';
   position: String = 'software developer';
   descriptions = [
-    'focused on front-end development',
-    'started with the full-stack track'
+    'specialized in in web development'
   ];
   phone: String = '352-278-6271';
   email: String = 'yangracehuo@gmail.com';
