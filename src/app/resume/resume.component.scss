@@ -15,18 +15,19 @@
     margin-bottom : 0.2rem;
   }
   .section, .label {
-    padding : 0.5rem 1rem;
+    padding : 0.2rem 1rem;
     width   : 100%;
   }
 
   .left-section {
+    padding: 0;
+    padding-top: 0.4rem;
     .label {
       background-color : #002e58;
     }
 
     color            : #FFFFFF;
     background-color : #003d74;
-    padding: 0;
   }
 
   .right-section {
