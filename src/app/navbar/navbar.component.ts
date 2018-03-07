@@ -32,6 +32,10 @@ export class NavbarComponent implements OnInit {
     {
       routerLink: '/certifications-awards',
       label: 'Certificates & Awards'
+    },
+    {
+      routerLink: '/resume',
+      label: 'Resume'
     }
   ];
 

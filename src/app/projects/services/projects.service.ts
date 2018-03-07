@@ -41,11 +41,23 @@ const PROJECTS = [
     details: 'Was in charge of the UI development for this project',
     detailsList: [
       'Started the UI project and created the main application',
-      'Built user-friendly, responsive user interfaces'
+      'Built user-friendly, responsive user interfaces (Key features: responsive, intuitive, flexible chart generation, download & print service, SSO)'
     ]
   },
   {
     id: 2,
+    title: 'HealthShare Clinical Viewer',
+    image: 'http://res.cloudinary.com/dbinsowan/image/upload/v1515340039/no_image_tjsdit.png',
+    startDate: '11/01/2017',
+    location: 'InterSystems Corporation',
+    skills: ['JavaScript', 'SQL'],
+    description: 'Responsive and mobile friendly next generation HealthShare Clinical Viewer for searching and viewing patient records, serving HealthShare customers around the world, including VA, HIXNY, and Healthix',
+    details: 'Was in charge of the UI development for this project',
+    detailsList: [
+    ]
+  },
+  {
+    id: 3,
     title: 'HealthShare Personal Community',
     image: 'http://res.cloudinary.com/dbinsowan/image/upload/v1515340040/project_pc_ko7adl.png',
     startDate: '02/21/2017',
@@ -60,7 +72,7 @@ const PROJECTS = [
     ]
   },
   {
-    id: 3,
+    id: 4,
     title: 'Electrodermal Activity (EDA) Arousal Detector',
     image: 'http://res.cloudinary.com/dbinsowan/image/upload/v1515340040/project_eda_lg1y3z.jpg',
     startDate: '12/01/2016',
@@ -79,7 +91,7 @@ const PROJECTS = [
     ]
   },
   {
-    id: 4,
+    id: 5,
     title: 'Sentiment Analysis on Movie Reviews',
     image: 'http://res.cloudinary.com/dbinsowan/image/upload/v1515340040/sentiment_dsrfrm.jpg',
     startDate: '03/01/2016',
@@ -99,7 +111,7 @@ const PROJECTS = [
     ]
   },
   {
-    id: 5,
+    id: 6,
     title: 'Web-Based Incident Reporting System',
     image: 'http://res.cloudinary.com/dbinsowan/image/upload/v1515340039/project_incidents_a13dw9.jpg',
     startDate: '01/01/2016',
@@ -120,7 +132,7 @@ const PROJECTS = [
     ]
   },
   {
-    id: 6,
+    id: 7,
     title: 'Bioinorganic Chemistry',
     image: 'http://res.cloudinary.com/dbinsowan/image/upload/v1516067414/imageedit_5_6408946011_f2bklv.png',
     startDate: '08/01/2010',
@@ -136,7 +148,7 @@ const PROJECTS = [
     ]
   },
   {
-    id: 7,
+    id: 8,
     title: 'Supramolecular & Cluster Chemistry',
     image: 'http://res.cloudinary.com/dbinsowan/image/upload/v1516067415/imageedit_9_8341709326_haljcy.png',
     startDate: '08/01/2012',

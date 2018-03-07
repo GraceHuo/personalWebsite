@@ -124,7 +124,20 @@ export class SkillsComponent implements OnInit {
               level: 2
             }
           ]
-        }
+        },
+        {
+          title: 'API',
+          items: [
+            {
+              name: 'RESTful',
+              level: 1
+            },
+            {
+              name: 'JSON',
+              level: 1
+            }
+          ]
+        },
       ],
     },
     {
@@ -134,6 +147,10 @@ export class SkillsComponent implements OnInit {
           items: [
             {
               name: 'HTML',
+              level: 1
+            },
+            {
+              name: 'XML',
               level: 1
             },
             {
@@ -172,19 +189,6 @@ export class SkillsComponent implements OnInit {
           ]
         },
         {
-          title: 'API',
-          items: [
-            {
-              name: 'RESTful',
-              level: 1
-            },
-            {
-              name: 'JSON',
-              level: 1
-            }
-          ]
-        },
-        {
           title: 'Design Basic',
           items: [
             {
@@ -196,6 +200,10 @@ export class SkillsComponent implements OnInit {
         {
           title: 'Testing',
           items: [
+            {
+              name: 'Karma',
+              level: 1
+            },
             {
               name: 'Jasmine',
               level: 1
@@ -231,6 +239,10 @@ export class SkillsComponent implements OnInit {
             },
             {
               name: 'AWS',
+              level: 2
+            },
+            {
+              name: 'JIRA',
               level: 2
             }
           ]

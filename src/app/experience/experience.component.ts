@@ -21,10 +21,12 @@ export class ExperienceComponent implements OnInit {
       title: 'Software Developer',
       logo: 'http://res.cloudinary.com/dbinsowan/image/upload/v1515350978/intersystems_logo_vl3ck3.png',
       startDate: '02/21/2017',
-      details: 'Developed user interfaces for commercial applications using Angular',
+      details: 'specialized in web development',
       detailsList: [
-        'Developed HealthShare Operational Report (an interactive dashboard and report system)',
-        'Supported HealthShare Personal Community (a patient portal) 12.2 release'
+        'Developed HealthShare Reporting product for reports generation and management using Angular and d3.js. (Key features: responsive, intuitive, flexible chart generation, download & print service, SSO)',
+        'Developed responsive and mobile friendly next generation HealthShare Clinical Viewer for searching and viewing patient records, serving HealthShare customers around the world, including VA, HIXNY, and Healthix',
+        'Maintained HealthShare UI framework and supported HealthShare product releases, including Personal Community (a patient portal) and Provider Directory',
+        'Assisted the support team to fix product issues per customer request'
       ]
     },
     {
@@ -33,8 +35,9 @@ export class ExperienceComponent implements OnInit {
       logo: 'http://res.cloudinary.com/dbinsowan/image/upload/v1515350978/neusoft_logo_jt46ln.jpg',
       startDate: '06/01/2015',
       endDate: '08/31/2015',
-      details: 'Contributed to development of an education application using Java for Android platform',
+      details: 'specialized in Android development',
       detailsList: [
+        'Developed an education app for Android plateform using Java',
         'Worked with API\'s via REST and JSON',
         'Developed graphical user interfaces'
       ]
