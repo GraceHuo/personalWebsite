@@ -24,7 +24,7 @@ export class HomeComponent implements OnInit {
     }
   ];
   name: String = 'Yan (Grace) Huo';
-  position: String = 'software developer';
+  position: String = 'software engineer';
   descriptions = [
     'specialized in in web development'
   ];

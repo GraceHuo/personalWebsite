@@ -27,6 +27,23 @@ export class SkillsComponent implements OnInit {
     {
       list: [
         {
+          title: 'Database',
+          items: [
+            {
+              name: 'SQL',
+              level: 1
+            },
+            {
+              name: 'MongoDB',
+              level: 2
+            },
+            {
+              name: 'Redis',
+              level: 2
+            }
+          ]
+        },
+        {
           title: 'Programming Languages',
           items: [
             {
@@ -35,7 +52,7 @@ export class SkillsComponent implements OnInit {
             },
             {
               name: 'TypeScript',
-              level: 2
+              level: 1
             },
             {
               name: 'Java',
@@ -79,8 +96,8 @@ export class SkillsComponent implements OnInit {
               level: 1
             },
             {
-              name: 'Angular2',
-              level: 2
+              name: 'Angular6',
+              level: 1
             },
             {
               name: 'NodeJs',
@@ -101,10 +118,40 @@ export class SkillsComponent implements OnInit {
           ]
         },
         {
+          title: 'API',
+          items: [
+            {
+              name: 'RESTful',
+              level: 1
+            },
+            {
+              name: 'JSON',
+              level: 1
+            }
+          ]
+        },
+        {
+          title: 'Design Basic',
+          items: [
+            {
+              name: 'Responsive Design',
+              level: 1
+            }
+          ]
+        }
+      ],
+    },
+    {
+      list: [
+        {
           title: 'JavaScript Libraries (including but not limited to)',
           items: [
             {
               name: 'Lodash / Underscore.js',
+              level: 1
+            },
+            {
+              name: 'RxJS',
               level: 1
             },
             {
@@ -125,23 +172,6 @@ export class SkillsComponent implements OnInit {
             }
           ]
         },
-        {
-          title: 'API',
-          items: [
-            {
-              name: 'RESTful',
-              level: 1
-            },
-            {
-              name: 'JSON',
-              level: 1
-            }
-          ]
-        },
-      ],
-    },
-    {
-      list: [
         {
           title: 'Styling',
           items: [
@@ -168,32 +198,6 @@ export class SkillsComponent implements OnInit {
             {
               name: 'Bootstrap',
               level: 2
-            }
-          ]
-        },
-        {
-          title: 'Database',
-          items: [
-            {
-              name: 'SQL',
-              level: 2
-            },
-            {
-              name: 'MongoDB',
-              level: 2
-            },
-            {
-              name: 'Redis',
-              level: 2
-            }
-          ]
-        },
-        {
-          title: 'Design Basic',
-          items: [
-            {
-              name: 'Responsive Design',
-              level: 1
             }
           ]
         },

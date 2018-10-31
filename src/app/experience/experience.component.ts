@@ -18,7 +18,7 @@ export class ExperienceComponent implements OnInit {
   workList: any[] = [
     {
       company: 'InterSystems Corporation',
-      title: 'Software Developer',
+      title: 'Software Engineer',
       logo: 'http://res.cloudinary.com/dbinsowan/image/upload/v1515350978/intersystems_logo_vl3ck3.png',
       startDate: '02/21/2017',
       details: 'specialized in web development',
@@ -31,13 +31,13 @@ export class ExperienceComponent implements OnInit {
     },
     {
       company: 'Neusoft Corporation',
-      title: 'Intern Software Developer',
+      title: 'Intern Software Engineer',
       logo: 'http://res.cloudinary.com/dbinsowan/image/upload/v1515350978/neusoft_logo_jt46ln.jpg',
       startDate: '06/01/2015',
       endDate: '08/31/2015',
-      details: 'specialized in Android development',
+      details: 'specialized in mobile development',
       detailsList: [
-        'Developed an education app for Android plateform using Java',
+        'Developed an education mobile app using Java',
         'Worked with API\'s via REST and JSON',
         'Developed graphical user interfaces'
       ]
@@ -51,7 +51,7 @@ export class ExperienceComponent implements OnInit {
       logo: 'http://res.cloudinary.com/dbinsowan/image/upload/v1515967733/Tufts_logo_za2hbc.jpg',
       startDate: '08/01/2016',
       endDate: '12/31/2016',
-      details: 'Designed and implemented an Android application to communicate with smart wristband. ' +
+      details: 'Designed and implemented a mobile application to communicate with smart wristband. ' +
       'Investigated how movies will affect human\'s emotions using this app.'
     },
     {
@@ -60,7 +60,7 @@ export class ExperienceComponent implements OnInit {
       logo: 'http://res.cloudinary.com/dbinsowan/image/upload/v1515967733/Tufts_logo_za2hbc.jpg',
       startDate: '09/01/2015',
       endDate: '05/31/2016',
-      details: 'TA\'ed Courses “Database Systems” and “Algorithm"',
+      details: 'TA\'ed Courses: “Database Systems” and “Algorithm"',
       detailsList: [
         'Reinforced complex concepts and guided students on problems about SQL and NoSQL systems like MongoDB, Redis, etc',
         'Provided assistance with problems on design and analysis of algorithms']

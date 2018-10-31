@@ -22,9 +22,9 @@ export class EducationComponent implements OnInit {
       startDate: '08/01/2015',
       endDate: '05/31/2017',
       degree: 'Master\'s Degree',
-      details: ['MS student focused on web engineer',
+      details: ['MS student focused on web development',
       'Research Assistant in Human Computer Interaction Lab',
-        'Teaching Assistant for courses “Database Systems” and “Algorithm"']
+        'Teaching Assistant for courses: “Database Systems” and “Algorithm"']
     },
     {
       logo: 'http://res.cloudinary.com/dbinsowan/image/upload/v1515967733/Tufts_logo_za2hbc.jpg',
@@ -40,7 +40,7 @@ export class EducationComponent implements OnInit {
       startDate: '08/01/2010',
       endDate: '05/31/2014',
       degree: 'Master\'s Degree',
-      details: ['PhD candidate focused on bioinorganic chemistry and magnetic applications of multinuclear metal complexes',
+      details: ['PhD candidate focused on focused on synthetic, bioinorganic and physical inorganic chemistry',
         'Teaching Assistant for courses “General Chemistry”, “Analytical Chemistry” and “General Chemistry Lab”'
       ]
     },
@@ -127,10 +127,6 @@ export class EducationComponent implements OnInit {
     {
       name: 'Mastering Git',
       from: 'Pluralsight'
-    },
-    {
-      name: 'Programming Mobile Applications for Android Handheld Systems',
-      from: 'Coursera'
     },
     {
       name: 'Java Programming: Principles of Software Design',

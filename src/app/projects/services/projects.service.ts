@@ -78,12 +78,12 @@ const PROJECTS = [
     startDate: '12/01/2016',
     endDate: '02/28/2017',
     location: 'Tufts University',
-    skills: ['Human–computer Interaction', 'Java', 'Android'],
+    skills: ['Human–computer Interaction', 'Java', 'Mobile-Development'],
     url: 'https://github.com/yanhuowang/EmotionArousalsDetectorEmpatica',
-    description: 'Android application to communicate with smart wristband. ' +
+    description: 'Mobile application to communicate with smart wristband. ' +
     'Used by Tufts HCI lab to visualize Electrodermal Activity (EDA) value changes and detect emotion arousals in real-time ',
     detailsList: [
-      'Designed and implemented an Android application to communicate with smart wristband (Empatica E4) ' +
+      'Designed and implemented a mobile application to communicate with smart wristband (Empatica E4) ' +
       'and detect emotion arousals in real-time',
       'Applied the app to capture human EDA signal and detect EDA arousals',
       'Investigated how movies will affect human\'s emotions',

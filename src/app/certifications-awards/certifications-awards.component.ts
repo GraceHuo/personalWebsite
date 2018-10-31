@@ -8,6 +8,11 @@ import {Component, OnInit} from '@angular/core';
 export class CertificationsAwardsComponent implements OnInit {
   certificationsList: any[] = [
     {
+      title: 'Developing with InterSystems Objects and SQLs',
+      from: 'InterSystems',
+      date: '2018'
+    },
+    {
       title: 'Building and Managing HL7 Productions',
       from: 'InterSystems',
       date: '2017'
