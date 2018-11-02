@@ -127,6 +127,10 @@ export class SkillsComponent implements OnInit {
             {
               name: 'JSON',
               level: 1
+            },
+            {
+              name: 'AJAX',
+              level: 1
             }
           ]
         },
