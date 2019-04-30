@@ -17,11 +17,20 @@ export class ExperienceComponent implements OnInit {
 
   workList: any[] = [
     {
+      company: 'Dow Chemical Company',
+      title: 'TES IT Improvement Manager',
+      logo: 'https://res.cloudinary.com/dbinsowan/image/upload/v1556573119/Dow_Chemical_Company_logo.svg_gnosqr.png',
+      startDate: '05/20/2019',
+      details: '',
+      detailsList: []
+    },
+    {
       company: 'InterSystems Corporation',
       title: 'Software Engineer',
       logo: 'http://res.cloudinary.com/dbinsowan/image/upload/v1515350978/intersystems_logo_vl3ck3.png',
       startDate: '02/21/2017',
-      details: 'specialized in web development',
+      endDate: '05/17/2019',
+      details: 'specialized in software development',
       detailsList: [
         'Developed HealthShare Reporting product for reports generation and management using Angular and d3.js. (Key features: responsive, intuitive, flexible chart generation, download & print service, SSO)',
         'Developed responsive and mobile friendly next generation HealthShare Clinical Viewer for searching and viewing patient records, serving HealthShare customers around the world, including VA, HIXNY, and Healthix',
@@ -52,7 +61,7 @@ export class ExperienceComponent implements OnInit {
       startDate: '08/01/2016',
       endDate: '12/31/2016',
       details: 'Designed and implemented a mobile application to communicate with smart wristband. ' +
-      'Investigated how movies will affect human\'s emotions using this app.'
+        'Investigated how movies will affect human\'s emotions using this app.'
     },
     {
       company: 'Department of Computer Science',
@@ -66,12 +75,15 @@ export class ExperienceComponent implements OnInit {
         'Provided assistance with problems on design and analysis of algorithms']
     },
     {
-      company: 'Dr. Christou\'s Group',
+      company: 'Dr. Christou\'s Research Group',
       title: 'Research Assistant',
       logo: 'http://res.cloudinary.com/dbinsowan/image/upload/v1515968034/uf_logo_jojuoa.png',
       startDate: '09/01/2010',
       endDate: '05/01/2014',
       details: 'Focused on bioinorganic chemistry and magnetic applications of multinuclear metal complexes.',
+      detailsList: [
+        'Developed new synthetic routes to 3 series, totally 18 new complexes.'
+      ]
     },
     {
       company: 'Department of Chemistry',

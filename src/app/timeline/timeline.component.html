@@ -12,18 +12,27 @@
             {{article.startDate | date:'MMM yyyy'}} -
             <span *ngIf="article.endDate">{{article.endDate | date:'MMM yyyy'}} </span>
             <span *ngIf="!article.endDate">Present </span>
-        </b></h5>
+          </b></h5>
         <span> {{article[config.leftContent]}} </span>
       </div>
       <div class="timeline-container timeline-container-right wow fadeInRight">
         <h5 class="timeline-title">
-          <img class="inline-logo" src="{{article.logo}}" alt="logo">
+          <div class="logo-container"
+               [ngClass]="{'small-img':config.isLogo}">
+            <img class="inline-logo" src="{{article.logo}}" alt="logo">
+          </div>
           <b>{{article[config.rightTitle]}}</b>
         </h5>
         <span>{{article[config.rightContent]}}</span>
         <div *ngIf="article[config.rightList]">
 
-          <a class="details-link" data-toggle="collapse" href="{{'#collapse'+i}}" role="button" aria-expanded="false" aria-controls="collapseExample">
+          <a *ngIf="article[config.rightList] && article[config.rightList].length"
+             class="details-link"
+             data-toggle="collapse"
+             href="{{'#collapse'+i}}"
+             role="button"
+             aria-expanded="false"
+             aria-controls="collapseExample">
             Details
           </a>
           <div class="collapse" id="{{'collapse'+i}}">

@@ -12,22 +12,25 @@ export class EducationComponent implements OnInit {
     leftContent: 'degree',
     rightTitle: 'university',
     rightContent: 'major',
-    rightList: 'details'
+    rightList: 'details',
+    isLogo: true
   };
 
   educationList: any[] = [
     {
-      logo: 'http://res.cloudinary.com/dbinsowan/image/upload/v1515967733/Tufts_logo_za2hbc.jpg',
+      university: 'Tufts University',
+      logo: 'https://res.cloudinary.com/dbinsowan/image/upload/v1556576258/tufts_cz59pp.png',
       major: 'Computer Science,  GPA: 3.95',
       startDate: '08/01/2015',
       endDate: '05/31/2017',
       degree: 'Master\'s Degree',
       details: ['MS student focused on web development',
-      'Research Assistant in Human Computer Interaction Lab',
+        'Research Assistant in Human Computer Interaction Lab',
         'Teaching Assistant for courses: “Database Systems” and “Algorithm"']
     },
     {
-      logo: 'http://res.cloudinary.com/dbinsowan/image/upload/v1515967733/Tufts_logo_za2hbc.jpg',
+      university: 'Tufts University',
+      logo: 'https://res.cloudinary.com/dbinsowan/image/upload/v1556576258/tufts_cz59pp.png',
       major: 'Computer Science, GPA: 4.00',
       startDate: '08/01/2014',
       endDate: '05/31/2015',
@@ -35,7 +38,8 @@ export class EducationComponent implements OnInit {
       details: ['Prepared for a new career in Computer Science by taking all required courses for Computer Science major BS']
     },
     {
-      logo: 'http://res.cloudinary.com/dbinsowan/image/upload/v1515968034/uf_logo_jojuoa.png',
+      university: 'University of Florida',
+      logo: 'https://res.cloudinary.com/dbinsowan/image/upload/v1556576258/uf_vjdj0m.png',
       major: 'Chemistry, GPA: 3.87',
       startDate: '08/01/2010',
       endDate: '05/31/2014',
@@ -100,6 +104,14 @@ export class EducationComponent implements OnInit {
   ];
 
   independentCoursesList: any[] = [
+    {
+      name: 'Become a Full-stack .NET Developer',
+      from: 'Pluralsight'
+    },
+    {
+      name: 'C# Fundamentals',
+      from: 'Pluralsight'
+    },
     {
       name: 'Advanced JavaScript',
       from: 'Pluralsight'

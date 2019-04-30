@@ -67,6 +67,10 @@ export class SkillsComponent implements OnInit {
               level: 2
             },
             {
+              name: 'C#',
+              level: 3
+            },
+            {
               name: 'Caché ObjectScript',
               level: 2
             },
@@ -96,8 +100,12 @@ export class SkillsComponent implements OnInit {
               level: 1
             },
             {
-              name: 'Angular6',
+              name: 'Angular',
               level: 1
+            },
+            {
+              name: '.NET',
+              level: 3
             },
             {
               name: 'NodeJs',

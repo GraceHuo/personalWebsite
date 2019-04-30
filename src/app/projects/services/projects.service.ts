@@ -19,6 +19,10 @@ export class ProjectsService {
     return _.filter(PROJECTS, ['location', 'University of Florida']);
   }
 
+  getProjectsAfterWork() {
+    return _.filter(PROJECTS, ['location', 'After Work']);
+  }
+
   getProject(id: number) {
     return PROJECTS.find(project => project.id === id);
   }
@@ -32,7 +36,7 @@ const PROJECTS = [
   {
     id: 1,
     title: 'HealthShare Operation Reporting',
-    image: 'http://res.cloudinary.com/dbinsowan/image/upload/v1515340039/no_image_tjsdit.png',
+    image: 'https://res.cloudinary.com/dbinsowan/image/upload/v1556579733/operational_report_mflwup.png',
     startDate: '06/01/2017',
     location: 'InterSystems Corporation',
     skills: ['JavaScript', 'Angular', 'HTML', 'CSS', 'Highcharts', 'D3.js'],
@@ -47,7 +51,7 @@ const PROJECTS = [
   {
     id: 2,
     title: 'HealthShare Clinical Viewer',
-    image: 'http://res.cloudinary.com/dbinsowan/image/upload/v1515340039/no_image_tjsdit.png',
+    image: 'https://res.cloudinary.com/dbinsowan/image/upload/v1556579797/viewer_avrxbk.png',
     startDate: '11/01/2017',
     location: 'InterSystems Corporation',
     skills: ['JavaScript', 'SQL'],
@@ -122,17 +126,39 @@ const PROJECTS = [
     description: 'An application built with Ruby on Rails framework and MySQL database ' +
     'that allows people reporting and monitoring incidents.',
     details: 'Completed the whole design and develop process and won first place among eight projects',
-    detailsList: [
-      'Designed data schema and wireframe.',
-      'Implemented minimum viable product (MVP)',
-      'Performed tests using Rspec',
-      'Optimized static content using technics like expiry, content delivery network, gzip, etc',
-      'Wrote RESTful APIs using Grape.',
-      'Implemented polling and memory aching with Redis'
-    ]
+    detailsList: []
   },
   {
     id: 7,
+    title: 'Inventory Manager',
+    image: 'https://res.cloudinary.com/dbinsowan/image/upload/v1556579733/inventory_fjd9mn.png',
+    startDate: '12/01/2018',
+    endDate: '12/31/2018',
+    location: 'After Work',
+    skills: ['Angular', 'NodeJs', 'ExpressJs'],
+    url: 'https://github.com/GraceHuo/InventoryManager',
+    apiUrl: 'https://github.com/GraceHuo/InventoryManagerApi',
+    description: 'An application built with Angular and NodeJs (ExpressJs) ' +
+      'that allows people to manage home inventory.',
+    details: 'A 2-Tier application with separate frontend and backend',
+    detailsList: []
+  },
+  {
+    id: 8,
+    title: 'Activity Tracker',
+    image: 'https://res.cloudinary.com/dbinsowan/image/upload/v1556585194/Screen_Shot_2019-04-29_at_8.42.30_PM_auyzra.png',
+    startDate: '02/01/2019',
+    endDate: '02/28/2019',
+    location: 'After Work',
+    skills: ['.NET', 'C#', 'jQuery'],
+    url: 'https://github.com/GraceHuo/activityTracker',
+    description: 'An application built with .NET framework ' +
+      'that allows users to post and follow activities.',
+    details: '',
+    detailsList: []
+  },
+  {
+    id: 9,
     title: 'Bioinorganic Chemistry',
     image: 'http://res.cloudinary.com/dbinsowan/image/upload/v1516067414/imageedit_5_6408946011_f2bklv.png',
     startDate: '08/01/2010',
@@ -148,7 +174,7 @@ const PROJECTS = [
     ]
   },
   {
-    id: 8,
+    id: 10,
     title: 'Supramolecular & Cluster Chemistry',
     image: 'http://res.cloudinary.com/dbinsowan/image/upload/v1516067415/imageedit_9_8341709326_haljcy.png',
     startDate: '08/01/2012',

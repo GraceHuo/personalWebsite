@@ -9,6 +9,7 @@ export class ProjectsListComponent implements OnInit {
   projectsIntersystems: any[];
   projectsTufts: any[];
   projectsFlorida: any[];
+  projectsAfterWork: any[];
 
   currentTab = 0; // 0 - computer science, 1 - chemistry
 
@@ -23,6 +24,7 @@ export class ProjectsListComponent implements OnInit {
     this.projectsIntersystems = this.projectsService.getProjectsIntersystems();
     this.projectsTufts = this.projectsService.getProjectsTufts();
     this.projectsFlorida = this.projectsService.getProjectsFlorida();
+    this.projectsAfterWork = this.projectsService.getProjectsAfterWork();
   }
 
 }

@@ -1,4 +1,9 @@
-/*xs */
+/* smaller screens */
+
+h5 {
+  font-size: 1.15rem;
+}
+
 .timeline {
   position: relative;
   width: 100%;
@@ -52,9 +57,12 @@
   color: #4FB7BA;
 }
 
+.logo-container {
+  display: inline-block;
+}
 
-/*lg md sm */
-@media (min-width: 768px) {
+/* larger screens */
+@media (min-width: 996px) {
   .timeline-center-line {
     left: 50%;
   }
@@ -75,4 +83,14 @@
   .timeline-container-right {
     float: right;
   }
+
+  .logo-container {
+    &:not(.small-img) {
+      min-width: 110px;
+      .inline-logo {
+        max-width: 110px;
+      }
+    }
+  }
 }
+
