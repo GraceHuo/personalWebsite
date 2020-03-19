@@ -1,25 +1,25 @@
-import {Component, OnInit} from '@angular/core';
+import { Component, OnInit } from "@angular/core";
 
 @Component({
-  templateUrl: './skills.component.html',
-  styleUrls: ['./skills.component.scss']
+  templateUrl: "./skills.component.html",
+  styleUrls: ["./skills.component.scss"]
 })
 export class SkillsComponent implements OnInit {
   skillLevels: any[] = [
     {
       code: 1,
-      name: 'Expert',
-      description: 'Skills I am using in daily work'
+      name: "Expert",
+      description: "Skills I am using in daily work"
     },
     {
       code: 2,
-      name: 'Advanced',
-      description: 'Skills I have worked with in some projects'
+      name: "Advanced",
+      description: "Skills I have worked with in some projects"
     },
     {
       code: 3,
-      name: 'Intermediate',
-      description: 'Skills I have played with and have a basic understanding'
+      name: "Intermediate",
+      description: "Skills I have played with and have a basic understanding"
     }
   ];
 
@@ -27,249 +27,255 @@ export class SkillsComponent implements OnInit {
     {
       list: [
         {
-          title: 'Database',
+          title: "Database",
           items: [
             {
-              name: 'SQL',
+              name: "SQL",
               level: 1
             },
             {
-              name: 'MongoDB',
+              name: "MongoDB",
               level: 2
             },
             {
-              name: 'Redis',
+              name: "Redis",
               level: 2
             }
           ]
         },
         {
-          title: 'Programming Languages',
+          title: "Programming Languages",
           items: [
             {
-              name: 'JavaScript',
+              name: "JavaScript",
               level: 1
             },
             {
-              name: 'TypeScript',
+              name: "TypeScript",
               level: 1
             },
             {
-              name: 'Java',
+              name: "Java",
               level: 2
             },
             {
-              name: 'Python',
+              name: "Python",
               level: 2
             },
             {
-              name: 'C++ / C',
+              name: "C++ / C",
               level: 2
             },
             {
-              name: 'C#',
+              name: "C#",
               level: 3
             },
             {
-              name: 'Caché ObjectScript',
+              name: "Caché ObjectScript",
               level: 2
             },
             {
-              name: 'Object-Oriented Programming',
+              name: "Object-Oriented Programming",
               level: 1
             },
             {
-              name: 'Functional Programming',
+              name: "Functional Programming",
               level: 1
             },
             {
-              name: 'Android',
+              name: "Android",
               level: 2
             },
             {
-              name: 'Matlab',
+              name: "Matlab",
               level: 2
             }
           ]
         },
         {
-          title: 'Frameworks',
+          title: "Frameworks",
           items: [
             {
-              name: 'AngularJS',
+              name: "React",
               level: 1
             },
             {
-              name: 'Angular',
+              name: "Angular",
               level: 1
             },
             {
-              name: '.NET',
+              name: ".NET",
               level: 3
             },
             {
-              name: 'NodeJs',
+              name: "NodeJs",
               level: 2
             },
             {
-              name: 'ExpressJs',
+              name: "ExpressJs",
               level: 2
             },
             {
-              name: 'Sails',
+              name: "Sails",
               level: 3
             },
             {
-              name: 'Ruby on Rails',
+              name: "Ruby on Rails",
               level: 2
             }
           ]
         },
         {
-          title: 'API',
+          title: "API",
           items: [
             {
-              name: 'RESTful',
+              name: "RESTful",
               level: 1
             },
             {
-              name: 'JSON',
+              name: "JSON",
               level: 1
             },
             {
-              name: 'AJAX',
+              name: "AJAX",
               level: 1
             }
           ]
         },
         {
-          title: 'Design Basic',
+          title: "Design Basic",
           items: [
             {
-              name: 'Responsive Design',
+              name: "Responsive Design",
               level: 1
             }
           ]
         }
-      ],
+      ]
     },
     {
       list: [
         {
-          title: 'JavaScript Libraries (including but not limited to)',
+          title: "JavaScript Libraries (including but not limited to)",
           items: [
             {
-              name: 'Lodash / Underscore.js',
+              name: "Lodash / Underscore.js",
               level: 1
             },
             {
-              name: 'RxJS',
+              name: "RxJS",
               level: 1
             },
             {
-              name: 'jQuery',
+              name: "jQuery",
               level: 2
             },
             {
-              name: 'HighCharts',
+              name: "HighCharts",
               level: 2
             },
             {
-              name: 'd3.js / c3.js',
+              name: "d3.js / c3.js",
               level: 2
             },
             {
-              name: 'moment.js',
+              name: "moment.js",
               level: 2
             }
           ]
         },
         {
-          title: 'Styling',
+          title: "Styling",
           items: [
             {
-              name: 'HTML',
+              name: "HTML",
               level: 1
             },
             {
-              name: 'XML',
+              name: "XML",
               level: 1
             },
             {
-              name: 'CSS',
+              name: "CSS",
               level: 1
             },
             {
-              name: 'SASS',
+              name: "SASS",
               level: 1
             },
             {
-              name: 'Foundation',
+              name: "Foundation",
               level: 1
             },
             {
-              name: 'Bootstrap',
+              name: "Bootstrap",
               level: 2
             }
           ]
         },
         {
-          title: 'Testing',
+          title: "Testing",
           items: [
             {
-              name: 'Karma',
+              name: "Jest",
               level: 1
             },
             {
-              name: 'Jasmine',
+              name: "React Testing Library",
               level: 1
             },
             {
-              name: 'Mocha',
+              name: "Selenium",
+              level: 1
+            },
+            {
+              name: "Katalon",
+              level: 2
+            },
+            {
+              name: "Jasmine",
+              level: 1
+            },
+            {
+              name: "Mocha",
               level: 3
-            },
-            {
-              name: 'Protractor',
-              level: 3
             }
           ]
         },
         {
-          title: 'Engineering Tools',
+          title: "Engineering Tools",
           items: [
             {
-              name: 'Git',
+              name: "Git",
               level: 1
             },
             {
-              name: 'Perforce',
+              name: "Perforce",
               level: 1
             },
             {
-              name: 'Gulp',
+              name: "Gulp",
               level: 1
             },
             {
-              name: 'Unix/Linux',
-              level: 1
-            },
-            {
-              name: 'AWS',
+              name: "Unix/Linux",
               level: 2
             },
             {
-              name: 'JIRA',
+              name: "Azure",
+              level: 1
+            },
+            {
+              name: "JIRA",
               level: 2
             }
           ]
         }
       ]
-    }];
+    }
+  ];
 
-  constructor() {
-  }
+  constructor() {}
 
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }
