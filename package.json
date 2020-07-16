@@ -25,7 +25,7 @@
     "core-js": "^2.4.1",
     "jquery": "^2.2.4",
     "jquery.stellar": "github:markdalgleish/stellar.js#v0.6.2",
-    "lodash": "^4.17.13",
+    "lodash": "^4.17.19",
     "node-sass": "^4.13.1",
     "popper.js": "^1.12.9",
     "rxjs": "^5.5.2",
