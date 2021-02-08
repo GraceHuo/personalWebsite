@@ -18,14 +18,32 @@ export class ExperienceComponent implements OnInit {
   workList: any[] = [
     {
       company: "Dow Chemical Company",
-      title: "Senior IT Specialist / Improvement Manager",
+      title: "Senior M&E IT Business Process Specialist",
+      logo:
+        "https://res.cloudinary.com/dbinsowan/image/upload/v1556573119/Dow_Chemical_Company_logo.svg_gnosqr.png",
+      startDate: "11/01/2020",
+      detailsList: [
+        "Create innovative digital solutions to improve manufacturing and engineering productivity",
+        "Select, config and integrate purchased enterprise software for manufacturing & engineering operations",
+        "Develop custom solutions and API's",
+        "Conduct testing (both manual and automated) to ensure application stability and fit for purpose",
+        "Gather solution requirements and perform business process analysis",
+        "Update business process documentation and define most effective technology standards",
+        "Work closely with business improvement leaders and technology center representatives to evaluate business needs and solicit opportunities for improvement",
+        "Work with third party developers to deliver solution scope successfully on time and within budget"
+      ]
+    },
+    {
+      company: "Dow Chemical Company",
+      title: "Improvement Manager",
       logo:
         "https://res.cloudinary.com/dbinsowan/image/upload/v1556573119/Dow_Chemical_Company_logo.svg_gnosqr.png",
       startDate: "05/20/2019",
-      details: "specialized in automation testing",
+      endDate: "10/31/2020",
+      details: "specialized in software QA",
       detailsList: [
-        "Introduced software QA testing practices to TES IT software development team, resulting in significant improvement in quality of sotware deliverables",
-        "Created an improvement intiative to implement a automation testing framework",
+        "Introduced software QA testing practices to TES IT software development team, resulting in significant improvement in quality of software deliverables",
+        "Created an improvement initiative to implement a automation testing framework",
         "Led the development and execution of test plans and scripts for project-based, new software rollout. Tests include unit testing and integration testing using Jest, as well as web UI testing using Selenium"
       ]
     },

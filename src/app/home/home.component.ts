@@ -24,7 +24,7 @@ export class HomeComponent implements OnInit {
     }
   ];
   name: String = "Yan (Grace) Huo";
-  position: String = "Senior IT Specialist / Improvement Manager";
+  position: String = "Senior M&E IT Business Process Specialist";
   descriptions = [];
   cell: String = "(352)-278-6271";
   workPhone: String = "(979)-238-1442";
