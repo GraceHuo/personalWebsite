@@ -12,7 +12,7 @@ const routes: Routes = [
   {path: '', pathMatch: 'full', redirectTo: 'home'},
   {path: 'home', component: HomeComponent},
   {path: 'skills', component: SkillsComponent},
-  {path: 'projects', loadChildren: 'app/projects/projects.module#ProjectsModule'},
+  {path: 'projects', loadChildren: () => import('app/projects/projects.module').then(m => m.ProjectsModule)},
   {path: 'education', component: EducationComponent},
   {path: 'experience', component: ExperienceComponent},
   {path: 'resume', component: ResumeComponent},
