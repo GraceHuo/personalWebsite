@@ -6,7 +6,8 @@
     <div class="timeline-article"
          *ngFor="let article of list; let i = index">
       <div class="timeline-break-point"></div>
-      <div class="timeline-container timeline-container-left wow fadeInLeft">
+      <!-- <div class="timeline-container timeline-container-left wow fadeInLeft"> -->
+      <div class="timeline-container timeline-container-left">
         <h5 class="timeline-title">
           <b>
             {{article.startDate | date:'MMM yyyy'}} -
@@ -15,7 +16,9 @@
           </b></h5>
         <span> {{article[config.leftContent]}} </span>
       </div>
-      <div class="timeline-container timeline-container-right wow fadeInRight">
+      <!-- <div class="timeline-container timeline-container-right wow fadeInRight"> -->
+      <div class="timeline-container timeline-container-right">
+
         <h5 class="timeline-title">
           <div class="logo-container"
                [ngClass]="{'small-img':config.isLogo}">

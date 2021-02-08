@@ -27,8 +27,8 @@
             <div class="container">
               <div class="row home-container">
                 <!--left-->
-                <div class="col-sm-6 home-left-container wow fadeInLeft"
-                  data-wow-duration="1s">
+                <div class="col-sm-6 home-left-container" >
+
                   <div class="container-fluid">
                     <!--my pic-->
                     <div class="row justify-content-center align-items-center">
@@ -48,10 +48,9 @@
                     <div class="row justify-content-around">
                       <button *ngFor="let item of homeButtons"
                         type="button"
-                        class="btn btn-circle btn-xl text-light wow swing
+                        class="btn btn-circle btn-xl text-light
                         {{item.cssClass}}"
-                        [routerLink]="[item.routerLink]"
-                        data-wow-delay="1.5s">
+                        [routerLink]="[item.routerLink]">
                         <b>{{item.label}}</b>
                       </button>
                     </div>
@@ -59,8 +58,7 @@
                   </div>
                 </div>
                 <!--right-->
-                <div class="col-sm-6 home-right-container wow fadeInRight"
-                  data-wow-duration="1s">
+                <div class="col-sm-6 home-right-container">
                   <h2> {{name}} </h2>
                   <h5>{{position|uppercase}}</h5>
                   <span *ngFor="let des of descriptions">{{des}}<br/></span>
@@ -110,7 +108,7 @@
                         <h2 class="mt-4 mb-2">I am a:</h2>
                       </div>
                       <div class="col-12">
-                        <div class="mt-4 wow fadeInRight"
+                        <div class="mt-4"
                           *ngFor="let characteristic of characteristics; let
                           i=index">
                           <h4 class="text" [ngClass]="{'first':i===0,
