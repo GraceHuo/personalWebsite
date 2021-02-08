@@ -105,7 +105,7 @@ export class SkillsComponent implements OnInit {
             },
             {
               name: ".NET",
-              level: 3
+              level: 1
             },
             {
               name: "NodeJs",
@@ -229,12 +229,12 @@ export class SkillsComponent implements OnInit {
               level: 1
             },
             {
-              name: "Katalon",
-              level: 2
+              name: "Katalon Studio",
+              level: 1
             },
             {
               name: "Jasmine",
-              level: 1
+              level: 2
             },
             {
               name: "Mocha",
@@ -243,7 +243,7 @@ export class SkillsComponent implements OnInit {
           ]
         },
         {
-          title: "Engineering Tools",
+          title: "Engineering Tools / Cloud",
           items: [
             {
               name: "Git",
@@ -267,6 +267,19 @@ export class SkillsComponent implements OnInit {
             },
             {
               name: "JIRA",
+              level: 2
+            }
+          ]
+        },
+        {
+          title: "Project Management",
+          items: [
+            {
+              name: "Agile",
+              level: 1
+            },
+            {
+              name: "Change Management",
               level: 2
             }
           ]
